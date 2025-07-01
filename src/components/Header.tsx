@@ -11,7 +11,6 @@ const navigation = [
 ]
 
 export default function Header() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -43,7 +42,6 @@ export default function Header() {
                     <div className="flex lg:hidden">
                         <button
                             type="button"
-                            onClick={() => setMobileMenuOpen(true)}
                             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
                         >
                             <span className="sr-only">Open main menu</span>
