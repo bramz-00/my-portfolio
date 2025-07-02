@@ -25,7 +25,7 @@ const Hero = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="text-center">
+                    <div className="text-center pt-8">
                         <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
                             Hi I'am Zakaria 
                         </h1>

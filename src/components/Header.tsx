@@ -1,6 +1,7 @@
 
 
 import { useEffect, useState } from 'react'
+import { MobileNavbar } from './MobileNavbar';
 
 const navigation = [
     { name: 'About me', href: '#' },
@@ -28,24 +29,16 @@ export default function Header() {
             <header className={` fixed  items-center   top-0   z-50 transition-all duration-300 ${scrolled ? " shadow mt-4 w-5xl  rounded-xl backdrop-blur-2xl" : "w-full"
                 }`} >
                 <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
-                    <div className="flex lg:flex-1">
+                    <div className="flex lg:flex-1 w-full items-center justify-between ">
                         <a href="#" className="-m-1.5 p-1.5">
-                            <span className="sr-only">Your Company</span>
-                            {/* <img
-                alt=""
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
-              /> */}
+          
                             Zakaria Braham
                         </a>
-                    </div>
                     <div className="flex lg:hidden">
-                        <button
-                            type="button"
-                            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-                        >
-                            <span className="sr-only">Open main menu</span>
-                        </button>
+                 
+                        <MobileNavbar/>
+
+                    </div>
                     </div>
                     <div className="hidden lg:flex lg:gap-x-12">
                         {navigation.map((item) => (
