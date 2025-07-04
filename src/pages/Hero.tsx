@@ -9,7 +9,7 @@ const Hero = () => {
     useEffect(() => {
         const ctx = gsap.context(() => {
             const total = words.length;
-            const height = 45; // adjust to your item height (px)
+            const height = 40; // adjust to your item height (px)
             const duration = 1;
             const delay = 1.5;
 
