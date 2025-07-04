@@ -1,7 +1,7 @@
 
 const Experiances = () => {
   return (
-    <div>Experiances</div>
+    <section className="lg:h-screen h-full" id="experiences">Experiances</section>
   )
 }
 

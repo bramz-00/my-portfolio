@@ -5,7 +5,7 @@ const words = ["Web / Mobile Developer", "Software Engineer", "Freelancer", "Eng
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {
-      const { t } = useTranslation();
+    const { t } = useTranslation();
 
     const listRef = useRef<HTMLDivElement>(null);
 
@@ -34,7 +34,7 @@ const Hero = () => {
         return () => ctx.revert();
     }, []);
     return (
-        <div>
+        <section id="home">
             <div className="relative isolate px-6  lg:px-8">
                 <div
                     aria-hidden="true"
@@ -89,7 +89,7 @@ const Hero = () => {
                     />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

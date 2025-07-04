@@ -1,7 +1,7 @@
 
 const Skills = () => {
   return (
-    <div>Skills</div>
+    <section className="lg:h-screen h-full" id="skills">Skills</section>
   )
 }
 

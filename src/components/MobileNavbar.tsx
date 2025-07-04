@@ -1,23 +1,32 @@
 "use client"
 
-import * as React from "react"
 import { RxHamburgerMenu } from "react-icons/rx"
 import { CgClose } from "react-icons/cg"
+import React, { type ComponentType } from "react";
 
 import { Button } from "@/components/ui/button"
 import {
   Drawer,
-  DrawerClose,
   DrawerContent,
-  DrawerDescription,
   DrawerFooter,
   DrawerHeader,
-  DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
+import { useTranslation } from "react-i18next"
+type NavItem = {
+  name: string;
+  href: string;
+  icon: ComponentType<{ className?: string }>
 
-export function MobileNavbar() {
+};
+type MobileNavbarProps = {
+  navigation: NavItem[];
+};
+
+export function MobileNavbar({ navigation }: MobileNavbarProps) {
   const [isOpen, setIsOpen] = React.useState(false)
+  const { t } = useTranslation();
+
 
   return (
     <div className="z-50 relative">
@@ -29,23 +38,33 @@ export function MobileNavbar() {
         </DrawerTrigger>
 
         <DrawerContent
-          className="left-0 top-0 fixed h-full w-full bg-white shadow-md border-r z-50 transition-transform duration-300 ease-in-out transform"
+          className="left-0 top-20 fixed h-full w-full bg-white shadow-md border-r z-50 transition-transform duration-300 ease-in-out transform"
         >
           <div className="h-full flex flex-col">
             <DrawerHeader>
-              <DrawerTitle>Hi everyone</DrawerTitle>
-              <DrawerDescription>Set your daily activity goal.</DrawerDescription>
+              {/* <DrawerTitle>Hi everyone</DrawerTitle>
+              <DrawerDescription>Set your daily activity goal.</DrawerDescription> */}
             </DrawerHeader>
 
-            <div className="p-4 flex-1">
-              {/* Add your navbar links here */}
-              <p className="text-sm">Menu content goes here</p>
+            <div className="p-4 flex flex-col w-full text-center gap-2 ">
+
+              {navigation.map((item, idx) => {
+                const IconComponent = item.icon;
+                return (
+                  <div className="border rounded-lg py-2 w-full flex items-center justify-between px-12 gap-7">
+                    <a key={idx} href={item.href} className="text-lg font-medium hover:underline  ">
+                      {t(item.name)}
+                    </a>
+                    <IconComponent className="text-2xl" />
+                  </div>
+                )
+              })}
             </div>
 
             <DrawerFooter>
-              <DrawerClose asChild>
+              {/* <DrawerClose asChild>
                 <Button variant="outline">Cancel</Button>
-              </DrawerClose>
+              </DrawerClose> */}
             </DrawerFooter>
           </div>
         </DrawerContent>

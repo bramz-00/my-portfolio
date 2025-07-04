@@ -6,6 +6,15 @@
     "about": {
       "title": "About Me",
       "content": "I love building modern web apps."
-    }
+    },
+    "nav": {
+        "about": "About me",
+        "skills": "Skills",
+        "projects": "Projects",
+        "experience": "Experience",
+        "education": "Education",
+        "contact-me": "Contacte me"
+
+      }
   }
   
