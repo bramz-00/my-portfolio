@@ -38,7 +38,7 @@ export default function Header() {
     }, []);
     return (
         <div className="bg-white justify-center flex items-center w-full">
-            <header className={` fixed  items-center   top-0  z-50 transition-all duration-300 ${scrolled ? " shadow lg:mt-4 lg:w-5xl w-full   rounded-xl backdrop-blur-2xl transition-all duration-300 bg-white" : "w-full"
+            <header className={` fixed  items-center   top-0  z-50 transition-all duration-300 ${scrolled ? " shadow lg:mt-4 lg:w-5xl w-full   rounded-b-lg lg:rounded-xl backdrop-blur-2xl transition-all duration-300 bg-white" : "w-full"
                 }`} >
                 <nav aria-label="Global" className="flex items-center justify-between p-4 lg:px-8">
                     <div className="flex lg:flex-1 w-full items-center justify-between ">

@@ -1,7 +1,9 @@
+import ExperienceTimeline from "@/components/ExperienceTimeline"
 
 const Experiances = () => {
   return (
-    <section className="h-screen" id="experiences">Experiances</section>
+    <section id="experiences">      <ExperienceTimeline />
+</section>
   )
 }
 

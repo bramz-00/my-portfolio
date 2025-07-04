@@ -8,8 +8,10 @@ import { Button } from "@/components/ui/button"
 import {
   Drawer,
   DrawerContent,
+  DrawerDescription,
   DrawerFooter,
   DrawerHeader,
+  DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
 import { useTranslation } from "react-i18next"
@@ -42,8 +44,8 @@ export function MobileNavbar({ navigation }: MobileNavbarProps) {
         >
           <div className="h-full flex flex-col">
             <DrawerHeader>
-              {/* <DrawerTitle>Hi everyone</DrawerTitle>
-              <DrawerDescription>Set your daily activity goal.</DrawerDescription> */}
+              <DrawerTitle></DrawerTitle>
+              <DrawerDescription></DrawerDescription>
             </DrawerHeader>
 
             <div className="p-4 flex flex-col w-full text-center gap-2 ">
