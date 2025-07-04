@@ -15,6 +15,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer"
 import { useTranslation } from "react-i18next"
+import { scrollToAndClose } from "@/utils/scrollTo";
 type NavItem = {
   name: string;
   href: string;
@@ -40,9 +41,9 @@ export function MobileNavbar({ navigation }: MobileNavbarProps) {
         </DrawerTrigger>
 
         <DrawerContent
-          className="left-0 top-20 fixed h-full w-full bg-white shadow-md border-r z-50 transition-transform duration-300 ease-in-out transform"
+          className="left-0 top-0 fixed h-full w-full bg-white shadow-md border-r z-50 transition-transform duration-300 ease-in-out transform"
         >
-          <div className="h-full flex flex-col">
+          <div className="h-full flex flex-col overflow-y-auto">
             <DrawerHeader>
               <DrawerTitle></DrawerTitle>
               <DrawerDescription></DrawerDescription>
@@ -53,14 +54,19 @@ export function MobileNavbar({ navigation }: MobileNavbarProps) {
               {navigation.map((item, idx) => {
                 const IconComponent = item.icon;
                 return (
-                  <a  key={idx} href={item.href} className="border rounded-lg py-2 w-full flex items-center justify-between px-12 gap-7">
-                    <span className="text-lg font-medium hover:underline  ">
+                  <a
+                    key={idx}
+                    href={item.href}
+                    onClick={() => scrollToAndClose(item.href, () => setIsOpen(false))} className="border rounded-lg py-2 w-full flex items-center justify-between px-12 gap-7"
+                  >
+                    <span className="text-lg font-medium hover:underline">
                       {t(item.name)}
                     </span>
                     <IconComponent className="text-2xl" />
                   </a>
-                )
+                );
               })}
+
             </div>
 
             <DrawerFooter>

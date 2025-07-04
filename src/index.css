@@ -128,3 +128,15 @@
 body {
   font-family: 'Bricolage Grotesque Variable', sans-serif;
 }
+
+/* Webkit Browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:transparent; /* blue-500 */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: transparent; /* blue-600 */
+}

@@ -16,6 +16,7 @@ export function LanguageSwitcher() {
       <Label htmlFor="lang-switch" className="w-4">{isEnglish ? "EN" : "FR"}</Label>
       <Switch
         id="lang-switch"
+        className="cursor-pointer"
         checked={isEnglish}
         onCheckedChange={(checked) => setIsEnglish(checked)}
       />

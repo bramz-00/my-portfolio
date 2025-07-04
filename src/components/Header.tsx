@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { MobileNavbar } from './MobileNavbar';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
-import {    CiGrid42 } from "react-icons/ci";
+import { CiGrid42 } from "react-icons/ci";
 import { RxInfoCircled } from "react-icons/rx";
 import { TbChartDots3 } from "react-icons/tb";
 import { BsDiagram2 } from "react-icons/bs";
@@ -13,16 +13,16 @@ import { PiContactlessPaymentLight } from "react-icons/pi";
 
 export default function Header() {
     const { t } = useTranslation();
-    
-    const navigation = [
-        { name: t("nav.about"),icon:RxInfoCircled, href: "#about", },
-        { name: t("nav.skills"),icon:TbChartDots3, href: "#skills" },
-        { name: t("nav.projects"),icon:BsDiagram2, href: "#projects" },
-        { name: t("nav.experience"),icon:CiGrid42, href: "#experience" },
-        { name: t("nav.education"), icon:IoSchoolOutline,href: "#education" },
-        { name: t("nav.contact-me"),icon:PiContactlessPaymentLight, href: "#contact-me" },
 
-      ];
+    const navigation = [
+        { name: t("nav.about"), icon: RxInfoCircled, href: "#about", },
+        { name: t("nav.skills"), icon: TbChartDots3, href: "#skills" },
+        { name: t("nav.projects"), icon: BsDiagram2, href: "#projects" },
+        { name: t("nav.experience"), icon: CiGrid42, href: "#experience" },
+        { name: t("nav.education"), icon: IoSchoolOutline, href: "#education" },
+        { name: t("nav.contact-me"), icon: PiContactlessPaymentLight, href: "#contact-me" },
+
+    ];
 
     const [scrolled, setScrolled] = useState(false);
 
@@ -46,10 +46,10 @@ export default function Header() {
 
                             Zakaria Braham
                         </a>
-                        <div className='flex lg:gap-6  gap-2 items-center '>
+                        <div className='flex lg:gap-12  gap-2 items-center '>
 
 
-                            <div className="hidden lg:flex lg:gap-x-12 ">
+                            <div className="hidden lg:flex lg:gap-x-7 ">
                                 {navigation.map((item) => (
                                     <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900">
                                         {item.name}
