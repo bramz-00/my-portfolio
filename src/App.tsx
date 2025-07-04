@@ -6,6 +6,7 @@ import Experiances from "./pages/Experiances"
 import Hero from "./pages/Hero"
 import Projects from "./pages/Projects"
 import Skills from "./pages/Skills"
+import "./utils/i18n";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="relative flex flex-col items-center justify-center">
     <Header/>
+
     <Hero/>
     <About/>
     <Projects/>

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { MobileNavbar } from './MobileNavbar';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 const navigation = [
     { name: 'About me', href: '#' },
@@ -31,26 +32,32 @@ export default function Header() {
                 <nav aria-label="Global" className="flex items-center justify-between p-4 lg:px-8">
                     <div className="flex lg:flex-1 w-full items-center justify-between ">
                         <a href="#" className="-m-1.5 p-1.5">
-          
-                            Zakaria Braham  
-                        </a>
-                    <div className="flex lg:hidden">
-                 
-                        <MobileNavbar/>
 
-                    </div>
-                    </div>
-                    <div className="hidden lg:flex lg:gap-x-12">
-                        {navigation.map((item) => (
-                            <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900">
-                                {item.name}
-                            </a>
-                        ))}
-                    </div>
-                    <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <a href="#" className="text-sm/6 font-semibold text-gray-900">
-                        Contact me <span aria-hidden="true">&rarr;</span>
+                            Zakaria Braham
                         </a>
+                        <div className='flex lg:gap-6  gap-2 items-center '>
+
+
+                            <div className="hidden lg:flex lg:gap-x-12 ">
+                                {navigation.map((item) => (
+                                    <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900">
+                                        {item.name}
+                                    </a>
+                                ))}
+                                <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+                                    <a href="#" className="text-sm/6 font-semibold text-gray-900">
+                                        Contact me <span aria-hidden="true">&rarr;</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <LanguageSwitcher />
+                            <div className="flex lg:hidden">
+
+                                <MobileNavbar />
+
+                            </div>
+                        </div>
+
                     </div>
                 </nav>
 

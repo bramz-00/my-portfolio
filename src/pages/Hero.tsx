@@ -2,8 +2,11 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 const words = ["Web / Mobile Developer", "Software Engineer", "Freelancer", "Engineer"];
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+      const { t } = useTranslation();
+
     const listRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -45,7 +48,7 @@ const Hero = () => {
                         className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
                     />
                 </div>
-                <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:py-32">
+                <div className="mx-auto max-w-3xl py-16 sm:py-24 lg:py-32">
                     <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                         <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                             Announcing our next round of funding.{' '}
@@ -56,10 +59,8 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className="text-center pt-8">
-                        <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
-                            Hi I'am Zakaria
-                        </h1>
-
+                        <h1 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-6xl">{t("hero.title")} Zakaria BRAHAM</h1>
+                        <p className="text-lg text-gray-600">{t("hero.subtitle")}</p>
                         <div className="overflow-hidden h-[40px] w-full text-center">
                             <div ref={listRef} className="flex flex-col">
                                 {words.map((word, index) => (

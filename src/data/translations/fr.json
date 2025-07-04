@@ -1,0 +1,10 @@
+{
+    "hero": {
+      "title": "Salut c'est",
+      "subtitle": "Je suis développeur full-stack"
+    },
+    "about": {
+      "title": "À propos de moi",
+      "content": "J'adore créer des applications web modernes."
+    }
+  }
