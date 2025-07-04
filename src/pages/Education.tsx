@@ -1,7 +1,7 @@
 
 const Education = () => {
   return (
-    <section className="lg:h-screen h-full" id="education">
+    <section className="h-screen" id="education">
       Education
     </section>
   )
