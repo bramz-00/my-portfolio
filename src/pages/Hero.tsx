@@ -1,5 +1,35 @@
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+
+const words = ["Web / Mobile Developer", "Software Engineer", "Freelancer", "Engineer"];
 
 const Hero = () => {
+    const listRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            const total = words.length;
+            const height = 45; // adjust to your item height (px)
+            const duration = 1;
+            const delay = 1.5;
+
+            const tl = gsap.timeline({ repeat: -1 });
+
+            for (let i = 1; i <= total; i++) {
+                tl.to(listRef.current, {
+                    y: `-=${height}`,
+                    duration,
+                    ease: "power2.inOut",
+                    delay,
+                });
+            }
+
+            // reset position to start smoothly
+            tl.set(listRef.current, { y: 0 });
+        }, listRef);
+
+        return () => ctx.revert();
+    }, []);
     return (
         <div>
             <div className="relative isolate px-6  lg:px-8">
@@ -27,10 +57,22 @@ const Hero = () => {
                     </div>
                     <div className="text-center pt-8">
                         <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
-                            Hi I'am Zakaria 
+                            Hi I'am Zakaria
                         </h1>
-                 
-                   
+
+                        <div className="overflow-hidden h-[40px] w-full text-center">
+                            <div ref={listRef} className="flex flex-col">
+                                {words.map((word, index) => (
+                                    <div key={index} className="text-xl font-bold h-[40px] flex items-center justify-center">
+                                        {word}
+                                    </div>
+                                ))}
+                                {/* Duplicate the first word to create seamless loop */}
+                                <div className="text-xl font-bold h-[40px] flex items-center justify-center">
+                                    {words[0]}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div
