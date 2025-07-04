@@ -1,9 +1,8 @@
 
-import React, { type ComponentType } from "react";
+import { type ComponentType } from "react";
 
 
 import { useTranslation } from "react-i18next"
-import { scrollToAndClose } from "@/utils/scrollTo";
 type NavItem = {
   name: string;
   href: string;
@@ -34,7 +33,7 @@ export function MobileBottomNavbar({ navigation }: MobileNavbarProps) {
             >
 
               <IconComponent className="text-xl" />
-              <span className="text-[8px]">{item.name}</span>
+              <span className="text-[8px]">{t(item.name)}</span>
 
             </a>
           );
