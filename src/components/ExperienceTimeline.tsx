@@ -35,12 +35,12 @@ export default function ExperienceTimeline() {
       const items = gsap.utils.toArray(".timeline-item");
 
       items.forEach((item) => {
-        gsap.from(item, {
+        gsap.from(item as Element, {
           opacity: 0,
           y: 50,
           duration: 0.8,
           scrollTrigger: {
-            trigger: item,
+            trigger: item as Element,
             start: "top 80%",
             toggleActions: "play none none reverse",
           },
