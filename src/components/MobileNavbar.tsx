@@ -68,11 +68,7 @@ export function MobileNavbar({ navigation }: MobileNavbarProps) {
               })}
 
             </div>
-
             <DrawerFooter>
-              {/* <DrawerClose asChild>
-                <Button variant="outline">Cancel</Button>
-              </DrawerClose> */}
             </DrawerFooter>
           </div>
         </DrawerContent>

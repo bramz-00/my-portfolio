@@ -12,9 +12,9 @@ import "./utils/i18n";
 function App() {
 
   return (
-    <div className="relative flex flex-col items-center justify-center">
+    <div className="w-full flex flex-col items-center justify-center ">
+    
     <Header/>
-
     <Hero/>
     <About/>
     <Projects/>

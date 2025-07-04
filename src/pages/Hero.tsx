@@ -34,7 +34,7 @@ const Hero = () => {
         return () => ctx.revert();
     }, []);
     return (
-        <section id="home">
+        <section id="home" className="lg:h-screen snap-center">
             <div className="relative isolate px-6  lg:px-8">
                 <div
                     aria-hidden="true"

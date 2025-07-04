@@ -60,7 +60,7 @@ export default function ExperienceTimeline() {
             key={index}
             className="timeline-item mb-10 ml-4 relative pl-6"
           >
-            <div className="absolute left-[-10px] top-1.5 w-4 h-4 bg-blue-500 rounded-full border-2 border-white shadow-md" />
+            <div className="absolute left-[-10px] z-10 top-1.5 w-4 h-4 bg-blue-500 rounded-full border-2 border-white shadow-md" />
             <h3 className="text-xl font-semibold">{exp.title}</h3>
             <span className="text-sm text-gray-500">
               {exp.company} • {exp.date}

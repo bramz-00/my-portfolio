@@ -10,6 +10,7 @@ import { TbChartDots3 } from "react-icons/tb";
 import { BsDiagram2 } from "react-icons/bs";
 import { IoSchoolOutline } from "react-icons/io5";
 import { PiContactlessPaymentLight } from "react-icons/pi";
+import { MobileBottomNavbar } from './MobileBottomNavbar';
 
 export default function Header() {
     const { t } = useTranslation();
@@ -58,9 +59,7 @@ export default function Header() {
                             </div>
                             <LanguageSwitcher />
                             <div className="flex lg:hidden">
-
                                 <MobileNavbar navigation={navigation} />
-
                             </div>
                         </div>
 
@@ -68,6 +67,11 @@ export default function Header() {
                 </nav>
 
             </header>
+            <div className="flex lg:hidden">
+
+                <MobileBottomNavbar navigation={navigation} />
+
+            </div>
 
 
         </div>

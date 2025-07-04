@@ -2,8 +2,9 @@ import ExperienceTimeline from "@/components/ExperienceTimeline"
 
 const Experiances = () => {
   return (
-    <section id="experiences">      <ExperienceTimeline />
-</section>
+    <section id="experiences" className="snap-center h-screen">
+      <ExperienceTimeline />
+    </section>
   )
 }
 
