@@ -51,12 +51,12 @@ export function MobileNavbar({ navigation }: MobileNavbarProps) {
               {navigation.map((item, idx) => {
                 const IconComponent = item.icon;
                 return (
-                  <div className="border rounded-lg py-2 w-full flex items-center justify-between px-12 gap-7">
-                    <a key={idx} href={item.href} className="text-lg font-medium hover:underline  ">
+                  <a  key={idx} href={item.href} className="border rounded-lg py-2 w-full flex items-center justify-between px-12 gap-7">
+                    <span className="text-lg font-medium hover:underline  ">
                       {t(item.name)}
-                    </a>
+                    </span>
                     <IconComponent className="text-2xl" />
-                  </div>
+                  </a>
                 )
               })}
             </div>
