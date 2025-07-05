@@ -39,22 +39,22 @@ export default function Header() {
     }, []);
     return (
         <div className="bg-white justify-center flex items-center w-full">
-            <header className={` fixed  items-center   top-0  z-50 transition-all duration-300 ${scrolled ? " shadow lg:mt-4 lg:w-5xl w-full   rounded-b-lg lg:rounded-xl backdrop-blur-2xl transition-all duration-300 bg-white" : "w-full"
+            <header className={` fixed   items-center  lg:bg-transparent top-0 rounded-b-lg lg:rounded-xl bg-white  z-50 transition-all duration-300 ${scrolled ? " shadow lg:mt-4 lg:w-5xl w-full backdrop-blur-2xl    bg-white transition-all duration-300 " : "w-full"
                 }`} >
                 <nav aria-label="Global" className="">
                     <div className="flex  w-full  items-center  lg:justify-center justify-between  py-3 ">
-                        <div className={`px-6 flex lg:justify-center w-full justify-between  items-center transition-all duration-300  ${scrolled ? "lg:gap-12 gap-2" : "lg:gap-30 gap-2"}`}>
-                            <a href="#" className="-m-1.5 p-1.5">
+                        <div className={`lg:px-6 px-2 flex lg:justify-center w-full justify-between  items-center transition-all duration-300  ${scrolled ? "lg:gap-12 gap-2" : "xl:gap-30 lg:gap-16 gap-2"}`}>
+                            <a href="/" className="-m-1.5 p-1.5">
 
-                               <img src={logo} alt="" className={` ${scrolled ?"w-16":""}`} />
+                               <img src={logo} alt="" className={` ${scrolled ?" w-16":"2xl:w-24 w-16"}`} />
                             </a>
 
 
-                            <div className="hidden lg:flex lg:gap-x-7 ">
+                            <div className="hidden lg:flex lg:gap-x-6 ">
                                 {navigation.map((item) => {
                                     const IconComponent = item.icon;
                                     return (
-                                        <a key={item.name} href={item.href} className="hover:text-blue-600 flex text-sm/6 gap-2 items-center font-semibold text-gray-900">
+                                        <a key={item.name} href={item.href} className="hover:text-blue-600 flex 2xl:text-base lg:text-sm text-xs gap-2 items-center font-semibold text-gray-900">
                                             {item.name}
                                             <IconComponent className="text-2xl" />
                                         </a>

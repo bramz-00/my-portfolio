@@ -32,8 +32,8 @@ export function MobileNavbar({ navigation }: MobileNavbarProps) {
 
 
   return (
-    <div className="z-50 relative">
-      <Drawer open={isOpen} onOpenChange={setIsOpen}>
+    <div className="z-20 relative">
+      <Drawer open={isOpen} onOpenChange={setIsOpen} >
         <DrawerTrigger asChild>
           <Button variant="outline">
             {isOpen ? <CgClose size={20} /> : <RxHamburgerMenu size={20} />}
