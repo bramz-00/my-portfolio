@@ -13,15 +13,14 @@ function App() {
 
   return (
     <div className="w-full flex flex-col items-center justify-center ">
-    
-    <Header/>
-    <Hero/>
-    <About/>
-    <Projects/>
-    <Experiances/>
-    <Education/>
-    <Skills/>
-    <Footer/>
+      <Header />
+      <Hero />
+      <About />
+      <Experiances />
+      <Skills />
+      <Education />
+      <Projects />
+      <Footer />
     </div>
   )
 }
