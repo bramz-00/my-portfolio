@@ -1,4 +1,4 @@
-
+import { ReusableTabs } from "@/components/CustomTabs";
 
 type Skill = {
   name: string;
@@ -17,40 +17,42 @@ const skills: Skill[] = [
   { name: "Git", category: "Tools" },
   { name: "Docker", category: "DevOps" },
 ];
+
 const Skills = () => {
   const categories = Array.from(new Set(skills.map((s) => s.category)));
 
-  return (
+  // Generate tab data from categories
+  const tabData = categories.map((category) => ({
+    label: category,
+    value: category.toLowerCase(),
+    content: (
+      <div className="grid grid-cols-1 w-full sm:grid-cols-2 items-center justify-center md:grid-cols-3 gap-4">
+        {skills
+          .filter((s) => s.category === category)
+          .map((skill, idx) => (
+            <div
+              key={idx}
+              className="py-10 border rounded-3xl w-full bg-white hover:shadow-md transition duration-300"
+            >
+              <p className="text-center font-medium">{skill.name}</p>
+            </div>
+          ))}
+      </div>
+    ),
+  }));
 
-    <section id="skills" className="py-16 bg-[#F8FAFC] lg:p-8 p-4 w-full   mx-auto">
+  return (
+    <section
+      id="skills"
+      className="py-16 bg-[#F8FAFC]  w-full flex flex-col items-center justify-center "
+    >
       <h2 className="text-4xl font-bold text-center mb-10">Skills</h2>
 
-      <div className="space-y-10 lg:px-24 px-2">
-        {categories.map((cat, i) => (
-          <div key={i}>
-            <h3 className="text-xl font-semibold mb-4">{cat}</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 w-full">
-              {skills
-                .filter((s) => s.category === cat)
-                .map((skill, idx) => (
-                  <div
-                    key={idx}
-                    className="py-48 border  rounded-3xl  w-full bg-white hover:shadow-md transition duration-300"
-                  >
-                    <p className="text-center font-medium">{skill.name}</p>
-                    <p className="text-center font-medium">{skill.name}</p>
-
-                  </div>
-                ))}
-            </div>
-          </div>
-        ))}
+      <div className="flex justify-center mb-8 w-full">
+        <ReusableTabs tabs={tabData} className="w-full max-w-full px-3 lg:p-12" />
       </div>
-
-
-
     </section>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;
