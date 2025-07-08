@@ -22,22 +22,24 @@ const Skills = () => {
 
   return (
 
-    <section id="skills" className="py-16 px-4 max-w-5xl mx-auto lg:h-screen">
+    <section id="skills" className="py-16 bg-[#F8FAFC] lg:p-8 p-4 w-full   mx-auto">
       <h2 className="text-4xl font-bold text-center mb-10">Skills</h2>
 
-      <div className="space-y-10">
+      <div className="space-y-10 lg:px-24 px-2">
         {categories.map((cat, i) => (
           <div key={i}>
             <h3 className="text-xl font-semibold mb-4">{cat}</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 w-full">
               {skills
                 .filter((s) => s.category === cat)
                 .map((skill, idx) => (
                   <div
                     key={idx}
-                    className="p-4 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition duration-300"
+                    className="py-48 border  rounded-3xl  w-full bg-white hover:shadow-md transition duration-300"
                   >
                     <p className="text-center font-medium">{skill.name}</p>
+                    <p className="text-center font-medium">{skill.name}</p>
+
                   </div>
                 ))}
             </div>
