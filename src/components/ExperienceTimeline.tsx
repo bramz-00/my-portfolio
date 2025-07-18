@@ -54,7 +54,7 @@ export default function ExperienceTimeline() {
 
 
   return (
-    <section id="experience" className="py-16 px-4 max-w-4xl mx-auto">
+    <section id="experience" className="py-16 px-4 w-full">
       <h2 className="text-4xl font-bold mb-12 text-center">My Experience</h2>
       <div className="relative w-full overflow-clip">
         <Timeline data={data} />
