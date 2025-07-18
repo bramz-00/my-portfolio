@@ -1,19 +1,38 @@
 {
-    "hero": {
-      "title": "Salut c'est",
-      "subtitle": "Je suis développeur full-stack"
+  "hero": {
+    "title": "Salut c'est",
+    "subtitle": "Je suis développeur full-stack"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "content": "J'adore créer des applications web modernes."
+  },
+  "nav": {
+    "about": "Biographie",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "experience": "Expérience",
+    "education": "Éducation",
+    "contact-me": "Contactez-moi"
+  },
+  "experience": {
+    "aladvise": {
+      "title": "Développeur Frontend",
+      "company": "Tech Corp",
+      "date": "Jan 2023 - Present",
+      "description": "Création d'interfaces web modernes avec React et Tailwind CSS."
     },
-    "about": {
-      "title": "À propos de moi",
-      "content": "J'adore créer des applications web modernes."
+    "bdigitall": {
+      "title": "Développeur Stagiaire",
+      "company": "BdigitAll",
+      "date": "Jun 2022 - Dec 2022",
+      "description": "Contribution aux outils internes avec Vue.js et Laravel."
     },
-    "nav": {
-        "about": "Biographie",
-        "skills": "Compétences",
-        "projects": "Projets",
-        "experience": "Expérience",
-        "education": "Éducation",
-        "contact-me": "Contactez-moi"
-
-      }
+      "m2i-services": {
+      "title": "Ingenieur Développeur Fullstack",
+      "company": "M2I Services",
+      "date": "Oct 2023 - Jan 2025",
+      "description": "Contribution aux outils internes avec Vue.js et Laravel."
+    }
   }
+}

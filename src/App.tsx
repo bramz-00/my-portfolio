@@ -15,6 +15,7 @@ function App() {
     <div className="w-full flex flex-col items-center justify-center ">
       <Header />
       <Hero />
+  
       <About />
       <Experiances />
       <Skills />

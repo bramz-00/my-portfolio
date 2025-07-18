@@ -1,73 +1,63 @@
 "use client";
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import { Timeline } from "./ui/timeline";
+import { useTranslation } from "react-i18next";
 
-gsap.registerPlugin(ScrollTrigger);
-
-type Experience = {
-  title: string;
-  company: string;
-  date: string;
-  description: string;
-};
-
-const experiences: Experience[] = [
-  {
-    title: "Frontend Developer",
-    company: "Tech Corp",
-    date: "Jan 2023 - Present",
-    description: "Built modern web interfaces using React and Tailwind CSS.",
-  },
-  {
-    title: "Intern Developer",
-    company: "StartupX",
-    date: "Jun 2022 - Dec 2022",
-    description: "Contributed to internal tools with Vue.js and Laravel.",
-  },
-];
 
 export default function ExperienceTimeline() {
-  const timelineRef = useRef<HTMLDivElement>(null);
+      const { t } = useTranslation();
+  
+  const data = [
+    {
+      title: t("experience.aladvise.company"),
+      content: (
+        <div>
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          </p>
+          <div className="grid grid-cols-2 gap-4">
+        
+            
+          </div>
+        </div>
+      ),
+      
+    },
+        {
+      title: t("experience.bdigitall.company"),
+      content: (
+        <div>
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          </p>
+          <div className="grid grid-cols-2 gap-4">
+        
+            
+          </div>
+        </div>
+      ),
+      
+    },
+            {
+      title: t("experience.m2i-services.company"),
+      content: (
+        <div>
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          </p>
+          <div className="grid grid-cols-2 gap-4">
+        
+            
+          </div>
+        </div>
+      ),
+      
+    },
 
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const items = gsap.utils.toArray(".timeline-item");
+  ];
 
-      items.forEach((item) => {
-        gsap.from(item as Element, {
-          opacity: 0,
-          y: 50,
-          duration: 0.8,
-          scrollTrigger: {
-            trigger: item as Element,
-            start: "top 80%",
-            toggleActions: "play none none reverse",
-          },
-        });
-      });
-    }, timelineRef); // 👈 important : scope to ref
-
-    return () => ctx.revert(); // 👈 clean on unmount
-  }, []);
 
   return (
     <section id="experience" className="py-16 px-4 max-w-4xl mx-auto">
       <h2 className="text-4xl font-bold mb-12 text-center">My Experience</h2>
-      <div ref={timelineRef} className="relative border-l-2 border-gray-300">
-        {experiences.map((exp, index) => (
-          <div
-            key={index}
-            className="timeline-item mb-10 ml-4 relative pl-6"
-          >
-            <div className="absolute left-[-10px] z-10 top-1.5 w-4 h-4 bg-gray-500 rounded-full border-2 border-white shadow-md" />
-            <h3 className="text-xl font-semibold">{exp.title}</h3>
-            <span className="text-sm text-gray-500">
-              {exp.company} • {exp.date}
-            </span>
-            <p className="mt-2 text-gray-700">{exp.description}</p>
-          </div>
-        ))}
+      <div className="relative w-full overflow-clip">
+        <Timeline data={data} />
       </div>
     </section>
   );
