@@ -1,6 +1,11 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-
+import {
+    useScroll,
+    useTransform,
+    motion,
+    useInView,
+} from "motion/react";
 const words = ["Web / Mobile Developer", "Software Engineer", "Freelancer", "Engineer"];
 import { useTranslation } from "react-i18next";
 
@@ -59,10 +64,32 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className="text-center pt-8">
-                        <h1 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-6xl">{t("hero.title")} Zakaria BRAHAM</h1>
-                        <p className="text-lg text-gray-600">{t("hero.subtitle")}</p>
+                        <motion.h1 initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 0.4,
+                                delay: 0.1,
+                                ease: [0.25, 0.46, 0.45, 0.94]
+                            }}
+                            className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-6xl">{t("hero.title")} Zakaria BRAHAM</motion.h1>
+                        <motion.p
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 0.8,
+                                delay: 0.1,
+                                ease: [0.25, 0.46, 0.45, 0.94]
+                            }}
+                            className="text-lg text-gray-600">{t("hero.subtitle")}</motion.p>
                         <div className="overflow-hidden h-[40px] w-full text-center">
-                            <div ref={listRef} className="flex flex-col">
+                            <motion.div ref={listRef} className="flex flex-col"
+                             initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 1,
+                                delay: 0.1,
+                                ease: [0.25, 0.46, 0.45, 0.94]
+                            }}>
                                 {words.map((word, index) => (
                                     <div key={index} className="text-xl font-bold h-[40px] flex items-center justify-center">
                                         {word}
@@ -72,7 +99,7 @@ const Hero = () => {
                                 <div className="text-xl font-bold h-[40px] flex items-center justify-center">
                                     {words[0]}
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                 </div>
