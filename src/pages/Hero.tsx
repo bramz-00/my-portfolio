@@ -1,10 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import {
-    useScroll,
-    useTransform,
     motion,
-    useInView,
 } from "motion/react";
 const words = ["Web / Mobile Developer", "Software Engineer", "Freelancer", "Engineer"];
 import { useTranslation } from "react-i18next";
@@ -105,11 +102,17 @@ const Hero = () => {
                                     </div>
                                 </motion.div>
                             </div>
-                            <div className="flex gap-4 items-center lg:justify-start w-full justify-center">
+                            <motion.div initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{
+                                    duration: 1,
+                                    delay: 0.1,
+                                    ease: [0.25, 0.46, 0.45, 0.94]
+                                }} className="flex gap-4 items-center lg:justify-start w-full justify-center">
                                 <Button className="py-1.5 px-4 hover:bg-[#7611a6]/70 cursor-pointer bg-[#7611a6] rounded-3xl">My resume</Button>
                                 <ContactModal />
 
-                            </div>
+                            </motion.div>
                         </div>
                           <motion.img
                             initial={{ opacity: 0, y: 50 }}

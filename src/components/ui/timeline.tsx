@@ -99,10 +99,8 @@ const TimelineItem = ({
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const headerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
 
-  const headerInView = useInView(headerRef, { once: true, margin: "-10%" });
 
   useEffect(() => {
     if (ref.current) {

@@ -11,7 +11,6 @@ import { BsDiagram2 } from "react-icons/bs";
 import { IoSchoolOutline } from "react-icons/io5";
 import { PiContactlessPaymentLight } from "react-icons/pi";
 import { MobileBottomNavbar } from './MobileBottomNavbar';
-import logo from "../assets/logo.svg"
 import { FiTerminal } from 'react-icons/fi';
 export default function Header() {
     const { t } = useTranslation();

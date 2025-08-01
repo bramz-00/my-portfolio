@@ -1,4 +1,3 @@
-import ContactModal from "./ContactModal";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
