@@ -8,7 +8,8 @@ import {
 } from "motion/react";
 const words = ["Web / Mobile Developer", "Software Engineer", "Freelancer", "Engineer"];
 import { useTranslation } from "react-i18next";
-
+import pic from '@/assets/zakaria-braham.webp'
+import { Button } from "@/components/ui/button";
 const Hero = () => {
     const { t } = useTranslation();
 
@@ -39,7 +40,7 @@ const Hero = () => {
         return () => ctx.revert();
     }, []);
     return (
-        <section id="home" className="lg:h-screen">
+        <section id="home" className="lg:h-screen w-full">
             <div className="relative isolate px-6  lg:px-8">
                 <div
                     aria-hidden="true"
@@ -53,8 +54,8 @@ const Hero = () => {
                         className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
                     />
                 </div>
-                <div className="mx-auto max-w-3xl py-16 sm:py-24 lg:py-32">
-                    <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+                <div className="mx-auto max-w-5xl py-16 sm:py-24 lg:py-32">
+                    {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                         <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                             Announcing our next round of funding.{' '}
                             <a href="#" className="font-semibold text-indigo-600">
@@ -62,44 +63,64 @@ const Hero = () => {
                                 Read more <span aria-hidden="true">&rarr;</span>
                             </a>
                         </div>
-                    </div>
-                    <div className="text-center pt-8">
-                        <motion.h1 initial={{ opacity: 0, y: 50 }}
+                    </div> */}
+                    <div className="flex gap-24 flex-row-reverse " >
+                        <motion.img
+                            initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{
                                 duration: 0.4,
                                 delay: 0.1,
                                 ease: [0.25, 0.46, 0.45, 0.94]
                             }}
-                            className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-6xl">{t("hero.title")} Zakaria BRAHAM</motion.h1>
-                        <motion.p
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{
-                                duration: 0.8,
-                                delay: 0.1,
-                                ease: [0.25, 0.46, 0.45, 0.94]
-                            }}
-                            className="text-lg text-gray-600">{t("hero.subtitle")}</motion.p>
-                        <div className="overflow-hidden h-[40px] w-full text-center">
-                            <motion.div ref={listRef} className="flex flex-col"
-                             initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{
-                                duration: 1,
-                                delay: 0.1,
-                                ease: [0.25, 0.46, 0.45, 0.94]
-                            }}>
-                                {words.map((word, index) => (
-                                    <div key={index} className="text-xl font-bold h-[40px] flex items-center justify-center">
-                                        {word}
+                            src={pic}
+                            alt="Zakaria BRAHAM"
+                            className="mx-auto border h-96 w-80 rounded-xl object-top object-cover "
+                        />
+
+                        <div className="text-left  flex flex-col justify-center items-start gap-4">
+                            <motion.h1 initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{
+                                    duration: 0.4,
+                                    delay: 0.1,
+                                    ease: [0.25, 0.46, 0.45, 0.94]
+                                }}
+                                className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">{t("hero.title")} <br />Zakaria BRAHAM</motion.h1>
+                            <motion.p
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{
+                                    duration: 0.8,
+                                    delay: 0.1,
+                                    ease: [0.25, 0.46, 0.45, 0.94]
+                                }}
+                                className="text-lg text-gray-600">{t("hero.subtitle")}</motion.p>
+                            <div className="overflow-hidden h-[40px] w-full text-center">
+                                <motion.div ref={listRef} className="flex flex-col"
+                                    initial={{ opacity: 0, y: 50 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{
+                                        duration: 1,
+                                        delay: 0.1,
+                                        ease: [0.25, 0.46, 0.45, 0.94]
+                                    }}>
+                                    {words.map((word, index) => (
+                                        <div key={index} className="text-xl font-bold h-[40px] flex items-start justify-start">
+                                            {word}
+                                        </div>
+                                    ))}
+                                    <div className="text-xl font-bold h-[40px] flex items-center justify-start">
+                                        {words[0]}
                                     </div>
-                                ))}
-                                {/* Duplicate the first word to create seamless loop */}
-                                <div className="text-xl font-bold h-[40px] flex items-center justify-center">
-                                    {words[0]}
-                                </div>
-                            </motion.div>
+                                </motion.div>
+                            </div>
+                            <div className="flex gap-4">
+                                <Button className="py-1.5 px-4 hover:bg-[#7611a6]/70 cursor-pointer bg-[#7611a6] rounded-3xl">My resume</Button>
+                                <Button className="py-1.5 px-4 hover:bg-[#7611a6]/10 cursor-pointer capitalize bg-white border border-[#7611a6] text-[#7611a6] rounded-3xl">Send me a message</Button>
+
+
+                            </div>
                         </div>
                     </div>
                 </div>

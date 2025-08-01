@@ -39,7 +39,7 @@ export default function Header() {
     }, []);
     return (
         <div className="bg-white justify-center flex items-center w-full">
-            <header className={` fixed   items-center  lg:bg-transparent top-0 rounded-b-lg lg:rounded-xl bg-white  z-50 transition-all duration-300 ${scrolled ? " shadow lg:mt-4 lg:w-5xl w-full backdrop-blur-2xl    bg-white transition-all duration-300 " : "w-full"
+            <header className={` fixed   items-center   top-0 rounded-b-lg lg:rounded-xl bg-white  z-50 transition-all duration-300 ${scrolled ? " shadow 2xl:w-5xl lg:mt-4 lg:w-4xl w-full backdrop-blur-2xl    bg-white/60 transition-all duration-300 " : "lg:bg-transparent w-full"
                 }`} >
                 <nav aria-label="Global" className="">
                     <div className="flex  w-full  items-center  lg:justify-center justify-between  py-3 ">

@@ -1,5 +1,7 @@
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="mx-auto w-full px-4 pt-16 pb-8 sm:px-6 lg:px-8 lg:pt-24">
        <div
@@ -7,7 +9,7 @@ const Footer = () => {
     >
       <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
         <li>
-          <a href="#" className="text-gray-500 transition hover:opacity-75">Zakaria BRAHAM @  2025</a>
+          <a href="#" className="text-gray-500 transition hover:opacity-75">Zakaria BRAHAM @  {currentYear}</a>
         </li>
       </ul>
 
