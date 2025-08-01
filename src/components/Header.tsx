@@ -12,6 +12,7 @@ import { IoSchoolOutline } from "react-icons/io5";
 import { PiContactlessPaymentLight } from "react-icons/pi";
 import { MobileBottomNavbar } from './MobileBottomNavbar';
 import logo from "../assets/logo.svg"
+import { FiTerminal } from 'react-icons/fi';
 export default function Header() {
     const { t } = useTranslation();
 
@@ -44,9 +45,10 @@ export default function Header() {
                 <nav aria-label="Global" className="">
                     <div className="flex  w-full  items-center  lg:justify-center justify-between  py-3 ">
                         <div className={`lg:px-6 px-2 flex lg:justify-center w-full justify-between  items-center transition-all duration-300  ${scrolled ? "lg:gap-24 gap-2" : "xl:gap-30 lg:gap-16 gap-2"}`}>
-                            <a href="/" className="-m-1.5 p-1.5">
+                            <a href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
 
-                               <img src={logo} alt="" className={` ${scrolled ?" w-16":"2xl:w-24 w-16"}`} />
+                               <FiTerminal className="text-xl text-[#7611a6]" /> 
+                                <span className="font-bold text-base capitalize">Zakaria Braham</span>
                             </a>
 
 

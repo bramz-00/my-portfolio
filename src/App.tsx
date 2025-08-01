@@ -1,5 +1,6 @@
 import Footer from "./components/Footer"
 import Header from "./components/Header"
+import { Toaster } from "./components/ui/sonner"
 import About from "./pages/About"
 import Education from "./pages/Education"
 import Experiances from "./pages/Experiances"
@@ -13,6 +14,12 @@ function App() {
 
   return (
     <div className="w-full flex flex-col items-center justify-center ">
+      <Toaster
+        position="top-center"
+        richColors
+        toastOptions={{
+          duration: 300,
+        }} />
       <Header />
       <Hero />
   

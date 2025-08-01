@@ -10,6 +10,7 @@ const words = ["Web / Mobile Developer", "Software Engineer", "Freelancer", "Eng
 import { useTranslation } from "react-i18next";
 import pic from '@/assets/zakaria-braham.webp'
 import { Button } from "@/components/ui/button";
+import ContactModal from "@/components/ContactModal";
 const Hero = () => {
     const { t } = useTranslation();
 
@@ -40,7 +41,7 @@ const Hero = () => {
         return () => ctx.revert();
     }, []);
     return (
-        <section id="home" className="lg:h-screen w-full">
+        <section id="home" className="lg:h-screen w-full relative">
             <div className="relative isolate px-6  lg:px-8">
                 <div
                     aria-hidden="true"
@@ -54,7 +55,7 @@ const Hero = () => {
                         className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
                     />
                 </div>
-                <div className="mx-auto max-w-5xl py-16 sm:py-24 lg:py-32">
+                <div className="mx-auto max-w-5xl py-16 sm:py-24 lg:py-32 relative">
                     {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                         <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                             Announcing our next round of funding.{' '}
@@ -64,21 +65,10 @@ const Hero = () => {
                             </a>
                         </div>
                     </div> */}
-                    <div className="flex gap-24 flex-row-reverse " >
-                        <motion.img
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{
-                                duration: 0.4,
-                                delay: 0.1,
-                                ease: [0.25, 0.46, 0.45, 0.94]
-                            }}
-                            src={pic}
-                            alt="Zakaria BRAHAM"
-                            className="mx-auto border h-96 w-80 rounded-xl object-top object-cover "
-                        />
+                    <div className="flex lg:gap-24 gap-4 px-4 flex-col lg:flex-row relative" >
 
-                        <div className="text-left  flex flex-col justify-center items-start gap-4">
+
+                        <div className="text-left  flex flex-col justify-center items-start gap-4 pt-10 lg:pt-0">
                             <motion.h1 initial={{ opacity: 0, y: 50 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{
@@ -115,13 +105,24 @@ const Hero = () => {
                                     </div>
                                 </motion.div>
                             </div>
-                            <div className="flex gap-4">
+                            <div className="flex gap-4 items-center lg:justify-start w-full justify-center">
                                 <Button className="py-1.5 px-4 hover:bg-[#7611a6]/70 cursor-pointer bg-[#7611a6] rounded-3xl">My resume</Button>
-                                <Button className="py-1.5 px-4 hover:bg-[#7611a6]/10 cursor-pointer capitalize bg-white border border-[#7611a6] text-[#7611a6] rounded-3xl">Send me a message</Button>
-
+                                <ContactModal />
 
                             </div>
                         </div>
+                          <motion.img
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 0.4,
+                                delay: 0.1,
+                                ease: [0.25, 0.46, 0.45, 0.94]
+                            }}
+                            src={pic}
+                            alt="Zakaria BRAHAM"
+                            className="mx-auto border h-96 w-80 rounded-xl object-top object-cover"
+                        />
                     </div>
                 </div>
                 <div

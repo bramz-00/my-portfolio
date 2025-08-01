@@ -1,4 +1,7 @@
 import { ReusableTabs } from "@/components/CustomTabs";
+import { FiTerminal } from 'react-icons/fi';
+import { FaTrophy } from 'react-icons/fa';
+import { BsDiagram3 } from 'react-icons/bs';
 
 type Skill = {
   name: string;
@@ -44,13 +47,37 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-16 bg-[#F8FAFC]  w-full flex flex-col items-center justify-center "
+      className="py-16 bg-transparent   w-full  lg:px-24 px-8"
     >
-      <h2 className="text-4xl font-bold text-center mb-10">Skills</h2>
+   <div className="rounded-xl p-6 shadow-sm lg:rounded-3xl lg:p-10 grid gap-12 lg:grid-cols-3">
 
-      <div className="flex justify-center mb-8 w-full">
-        <ReusableTabs tabs={tabData} className="w-full max-w-full px-3 lg:p-12" />
+       <div className="flex flex-col gap-2 lg:gap-4 ">
+        <FiTerminal className="text-[2.5rem] text-[#7611a6]" />
+        <h2 className="text-lg lg:text-2xl font-semibold">Full Stack</h2>
+        <p className="text-gray-400">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+        </p>
       </div>
+
+      <div className="flex flex-col gap-2 lg:gap-4">
+        <FaTrophy className="text-[2.5rem] text-[#7611a6]" />
+        <h2 className="text-lg lg:text-2xl font-semibold">Industry Leader</h2>
+        <p className="text-gray-400">
+          Neque viverra justo nec ultrices dui. Est ultricies integer quis auctor elit.
+        </p>
+      </div>
+
+      <div className="flex flex-col gap-2 lg:gap-4">
+        <BsDiagram3 className="text-[2.5rem] text-[#7611a6]" />
+        <h2 className="text-lg lg:text-2xl font-semibold">Strategy-Minded</h2>
+        <p className="text-gray-400">
+          Urna porttitor rhoncus dolor purus non enim praesent ornare.
+        </p>
+      </div>
+
+   </div>
+
+
     </section>
   );
 };
