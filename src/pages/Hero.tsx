@@ -109,7 +109,7 @@ const Hero = () => {
                                     delay: 0.1,
                                     ease: [0.25, 0.46, 0.45, 0.94]
                                 }} className="flex gap-4 items-center lg:justify-start w-full justify-center">
-                                <Button className="py-1.5 px-4 hover:bg-[#7611a6]/70 cursor-pointer bg-[#7611a6] rounded-3xl">My resume</Button>
+                                <Button className="py-1.5 px-4 hover:bg-primary/70 cursor-pointer bg-primary rounded-3xl">My resume</Button>
                                 <ContactModal />
 
                             </motion.div>
@@ -118,7 +118,7 @@ const Hero = () => {
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{
-                                duration: 0.4,
+                                duration: 0.8,
                                 delay: 0.1,
                                 ease: [0.25, 0.46, 0.45, 0.94]
                             }}

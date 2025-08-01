@@ -57,7 +57,7 @@ const ContactModal = () => {
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <Button className="py-1.5 px-4 hover:bg-[#7611a6]/10 cursor-pointer capitalize bg-white border border-[#7611a6] text-[#7611a6] rounded-3xl">Send me a message</Button>
+                <Button className="py-1.5 px-4 hover:bg-primary/10 cursor-pointer capitalize bg-white border border-primary text-primary rounded-3xl">Send me a message</Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-xl rounded-3xl p-8">
                 <DialogHeader>
@@ -89,7 +89,7 @@ const ContactModal = () => {
                         <Textarea name="message" placeholder="Type something" required />
                     </div>
                     <DialogFooter>
-                        <Button type="submit" disabled={loading} className="y-1.5 px-8 hover:bg-[#7611a6]/70 cursor-pointer bg-[#7611a6] rounded-3xl">
+                        <Button type="submit" disabled={loading} className="y-1.5 px-8 hover:bg-primary/70 cursor-pointer bg-primary rounded-3xl">
                             {loading ? "Sending..." : "Send"}
                         </Button>
                     </DialogFooter>

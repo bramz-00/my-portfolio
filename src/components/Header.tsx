@@ -46,7 +46,7 @@ export default function Header() {
                         <div className={`lg:px-6 px-2 flex lg:justify-center w-full justify-between  items-center transition-all duration-300  ${scrolled ? "lg:gap-24 gap-2" : "xl:gap-30 lg:gap-16 gap-2"}`}>
                             <a href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
 
-                               <FiTerminal className="text-xl text-[#7611a6]" /> 
+                               <FiTerminal className="text-xl text-primary" /> 
                                 <span className="font-bold text-base capitalize">Zakaria Braham</span>
                             </a>
 
@@ -54,7 +54,7 @@ export default function Header() {
                             <div className="hidden lg:flex lg:gap-x-6 ">
                                 {navigation.map((item) => {
                                     return (
-                                        <a key={item.name} href={item.href} className="hover:text-blue-600 flex 2xl:text-base lg:text-sm text-xs gap-2 items-center font-semibold text-gray-900">
+                                        <a key={item.name} href={item.href} className="hover:text-primary flex 2xl:text-base lg:text-sm text-xs gap-2 items-center font-semibold text-gray-900">
                                             {item.name}
                                         </a>
                                     )

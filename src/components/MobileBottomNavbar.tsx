@@ -29,7 +29,7 @@ export function MobileBottomNavbar({ navigation }: MobileNavbarProps) {
             <a
               key={idx}
               href={item.href}
-              className="inline-flex flex-col w-full items-center justify-center hover:bg-base-50  gap-1 hover:text-blue-500 text-base-500 "
+              className="inline-flex flex-col w-full items-center justify-center hover:bg-base-50  gap-1 hover:text-primary text-primary"
             >
 
               <IconComponent className="text-xl" />

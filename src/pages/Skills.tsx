@@ -52,7 +52,7 @@ const Skills = () => {
    <div className="rounded-xl p-6 shadow-sm lg:rounded-3xl lg:p-10 grid gap-12 lg:grid-cols-3">
 
        <div className="flex flex-col gap-2 lg:gap-4 ">
-        <FiTerminal className="text-[2.5rem] text-[#7611a6]" />
+        <FiTerminal className="text-[2.5rem] text-primary" />
         <h2 className="text-lg lg:text-2xl font-semibold">Full Stack</h2>
         <p className="text-gray-400">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
@@ -60,7 +60,7 @@ const Skills = () => {
       </div>
 
       <div className="flex flex-col gap-2 lg:gap-4">
-        <FaTrophy className="text-[2.5rem] text-[#7611a6]" />
+        <FaTrophy className="text-[2.5rem] text-primary" />
         <h2 className="text-lg lg:text-2xl font-semibold">Industry Leader</h2>
         <p className="text-gray-400">
           Neque viverra justo nec ultrices dui. Est ultricies integer quis auctor elit.
@@ -68,7 +68,7 @@ const Skills = () => {
       </div>
 
       <div className="flex flex-col gap-2 lg:gap-4">
-        <BsDiagram3 className="text-[2.5rem] text-[#7611a6]" />
+        <BsDiagram3 className="text-[2.5rem] text-primary" />
         <h2 className="text-lg lg:text-2xl font-semibold">Strategy-Minded</h2>
         <p className="text-gray-400">
           Urna porttitor rhoncus dolor purus non enim praesent ornare.
