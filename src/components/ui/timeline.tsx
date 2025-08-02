@@ -72,14 +72,19 @@ const TimelineItem = ({
             delay: index * 0.1 + 0.3,
             ease: [0.25, 0.46, 0.45, 0.94]
           }}
-          className=" text-xl pl-16 md:pl-20 md:text-5xl font-bold text-neutral-500 dark:text-neutral-500"
+          className=" text-xl flex items-center w-full justify-between pl-16 md:pl-20 md:text-xl font-bold text-neutral-500 dark:text-neutral-500"
         >
 
           {item.title}
+            <img
+            src={item.logo}
+            alt={item.title}
+            className="lg:h-16 lg:w-48 w-24 h-10 object-contain rounded"
+          />
 
         </motion.a>
         <motion.div
-        className="pl-16 md:pl-20"
+          className="pl-16 md:pl-20"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{
@@ -122,7 +127,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
       ref={containerRef}
     >
-   
+
       <div ref={ref} className="relative w-full pb-20">
         {data.map((item, index) => (
           <TimelineItem

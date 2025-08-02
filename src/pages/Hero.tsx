@@ -62,10 +62,10 @@ const Hero = () => {
                             </a>
                         </div>
                     </div> */}
-                    <div className="flex lg:gap-24 gap-4 px-4 flex-col lg:flex-row relative" >
+                    <div className="flex lg:gap-24 gap-4 px-4 flex-col lg:flex-row items-start justify-start relative lg:px-24" >
 
 
-                        <div className="text-left  flex flex-col justify-center items-start gap-4 pt-10 lg:pt-0">
+                        <div className="text-left  flex flex-col justify-center items-start gap-4 pt-10 lg:pt-10">
                             <motion.h1 initial={{ opacity: 0, y: 50 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{

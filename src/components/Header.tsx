@@ -54,7 +54,7 @@ export default function Header() {
                             <div className="hidden lg:flex lg:gap-x-6 ">
                                 {navigation.map((item) => {
                                     return (
-                                        <a key={item.name} href={item.href} className="hover:text-primary flex 2xl:text-base lg:text-sm text-xs gap-2 items-center font-semibold text-gray-900">
+                                        <a key={item.name} href={item.href} className="hover:text-primary flex 2xl:text-sm lg:text-xs text-xs gap-2 items-center font-semibold text-gray-900">
                                             {item.name}
                                         </a>
                                     )

@@ -22,11 +22,10 @@ function App() {
         }} />
       <Header />
       <Hero />
-  
       <About />
-      <Experiances />
-      <Projects />
       <Skills />
+      <Projects />
+      <Experiances />
       <Education />
       <Footer />
     </div>

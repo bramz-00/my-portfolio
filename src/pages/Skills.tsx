@@ -49,8 +49,10 @@ const Skills = () => {
       id="skills"
       className="py-16 bg-transparent   w-full  lg:px-24 px-8"
     >
+  <h2 className="text-4xl font-bold mb-12 text-left border-b pb-4">
+      Skills
+      </h2>
    <div className="rounded-xl p-6 shadow-sm lg:rounded-3xl lg:p-10 grid gap-12 lg:grid-cols-3">
-
        <div className="flex flex-col gap-2 lg:gap-4 ">
         <FiTerminal className="text-[2.5rem] text-primary" />
         <h2 className="text-lg lg:text-2xl font-semibold">Full Stack</h2>

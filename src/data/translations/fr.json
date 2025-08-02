@@ -15,24 +15,52 @@
     "education": "Éducation",
     "contact-me": "Contactez-moi"
   },
-  "experience": {
-    "aladvise": {
-      "title": "Développeur Frontend",
-      "company": "Tech Corp",
-      "date": "Jan 2023 - Present",
-      "description": "Création d'interfaces web modernes avec React et Tailwind CSS."
-    },
-    "bdigitall": {
-      "title": "Développeur Stagiaire",
-      "company": "BdigitAll",
-      "date": "Jan 2025 - Mai 2025",
-      "description": "Contribution aux outils internes avec Vue.js et Laravel."
-    },
-      "m2i-services": {
-      "title": "Ingenieur Développeur Fullstack",
-      "company": "M2I Services",
-      "date": "Oct 2023 - Jan 2025",
-      "description": "Contribution aux outils internes avec Vue.js et Laravel."
-    }
+  "experiance": {
+    "title": "Expérience",
+    "entries": [
+      {
+        "title": "Développeur Fullstack",
+        "company": "Aladvise - Groupe Career Booster",
+        "date": "Mai 2025 - À Présent",
+        "link": "https://aladvise.com",
+        "logo": "aladvise",
+        "description": "Création d'interfaces web modernes avec React et Tailwind CSS."
+      },
+      {
+        "title": "Ingénieur Logiciel confirmé",
+        "company": "BdigitAll - Paper Zero",
+        "date": "Jan 2025 - Mai 2025",
+        "link": "https://bdigitall.co/",
+        "logo": "bdigitall",
+        "description": "Contribution aux outils internes avec Vue.js et Laravel."
+      },
+      {
+        "title": "Ingenieur Développeur Fullstack",
+        "company": "M2I Services",
+        "date": "Oct 2023 - Jan 2025",
+        "link": "https://m2i-services.com/",
+        "logo": "m2i",
+        "description": "Contribution aux outils internes avec Vue.js et Laravel."
+      }
+    ]
+  },
+  "education": {
+    "title": "Formation",
+    "entries": [
+      {
+        "degree": "Master en Ingénierie Logicielle",
+        "institution": "Université de Bejaia - Algerie",
+        "year": "2021 - 2023",
+        "link": "https://univ-bejaia.dz/",
+        "description": "Specialized in Web and Cloud Engineering."
+      },
+      {
+        "degree": "Licence en Systèmes Informatiques",
+        "institution": "Université de Bejaia - Algérie",
+        "link": "https://univ-bejaia.dz/",
+        "year": "2018 - 2021",
+        "description": "Focused on full-stack development and systems."
+      }
+    ]
   }
 }
