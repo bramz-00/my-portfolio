@@ -37,18 +37,13 @@ const ContactModal = () => {
             const data = await res.json()
 
             if (data.success === "true" || data.success === true) {
-                toast.success("✅ Message sent!")
+                toast.success("Your message has been sent successfully. Thank you!")
                 form.reset()
-
-                // Simple client-side redirect (React)
-                setTimeout(() => {
-                    window.location.href = "/" // or any route you want
-                }, 1000)
             } else {
-                toast.error("❌ Something went wrong.")
+                toast.error("Something went wrong.")
             }
         } catch (err) {
-            toast.error("❌ Submission failed.")
+            toast.error("Submission failed.")
         } finally {
             setLoading(false)
         }
