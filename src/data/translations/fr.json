@@ -15,32 +15,56 @@
     "education": "Éducation",
     "contact-me": "Contactez-moi"
   },
-  "experiance": {
+  "experience": {
     "title": "Expérience",
     "entries": [
       {
         "title": "Développeur Fullstack",
         "company": "Aladvise - Groupe Career Booster",
-        "date": "Mai 2025 - À Présent",
+        "date": "Mai 2025 - À présent",
         "link": "https://aladvise.com",
         "logo": "aladvise",
-        "description": "Création d'interfaces web modernes avec React et Tailwind CSS."
+        "description": "Création d'interfaces web modernes avec React et Tailwind CSS.",
+        "responsibilities": [
+          "Développement de nouvelles fonctionnalités avec React et Tailwind.",
+          "Collaboration avec l'équipe backend pour l'intégration des API."
+        ],
+        "projects": [
+          "Tableau de bord entreprise",
+          "Outil interne de gestion RH"
+        ]
       },
       {
-        "title": "Ingénieur Logiciel confirmé",
+        "title": "Ingénieur Logiciel Confirmé / Développeur Backend",
         "company": "BdigitAll - Paper Zero",
-        "date": "Jan 2025 - Mai 2025",
+        "date": "Janvier 2025 - Mai 2025",
         "link": "https://bdigitall.co/",
         "logo": "bdigitall",
-        "description": "Contribution aux outils internes avec Vue.js et Laravel."
+        "description": "Contribution au développement des outils internes avec Vue.js et Laravel.",
+        "responsibilities": [
+          "Création de services backend réutilisables en Laravel.",
+          "Mise en place d'API REST et intégration avec le frontend."
+        ],
+        "projects": [
+          "Plateforme de signature électronique",
+          "Automatisation des workflows numériques"
+        ]
       },
       {
-        "title": "Ingenieur Développeur Fullstack",
+        "title": "Ingénieur Développeur Fullstack",
         "company": "M2I Services",
-        "date": "Oct 2023 - Jan 2025",
+        "date": "Octobre 2023 - Janvier 2025",
         "link": "https://m2i-services.com/",
         "logo": "m2i",
-        "description": "Contribution aux outils internes avec Vue.js et Laravel."
+        "description": "Participation à la conception et à l'amélioration d'outils internes avec Vue.js et Laravel.",
+        "responsibilities": [
+          "Développement de modules web avec Vue.js et Laravel.",
+          "Maintenance et amélioration de systèmes existants."
+        ],
+        "projects": [
+          "Outil de suivi de projets",
+          "Tableau de bord de reporting client"
+        ]
       }
     ]
   },
