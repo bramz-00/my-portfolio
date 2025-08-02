@@ -18,7 +18,7 @@ function App() {
         position="top-center"
         richColors
         toastOptions={{
-          duration: 300,
+          duration: 600,
         }} />
       <Header />
       <Hero />
