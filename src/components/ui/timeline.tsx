@@ -50,7 +50,7 @@ const TimelineItem = ({
             stiffness: 200,
             damping: 15
           }}
-          className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center"
+          className="h-10 absolute -left-2 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center"
         >
           <motion.div
             initial={{ scale: 0 }}
@@ -75,7 +75,7 @@ const TimelineItem = ({
             delay: index * 0.1 + 0.3,
             ease: [0.25, 0.46, 0.45, 0.94]
           }}
-          className=" text-xl flex lg:flex-row gap-4 lg:items-center items-start flex-col-reverse w-full justify-between pl-16 md:pl-20 md:text-xl font-bold text-neutral-500 dark:text-neutral-500"
+          className=" text-xl flex lg:flex-row gap-4 lg:items-center items-start flex-col-reverse w-full justify-between pl-8 md:pl-20 md:text-xl font-bold text-neutral-500 dark:text-neutral-500"
         >
 
           {item.title}
@@ -90,7 +90,7 @@ const TimelineItem = ({
 
         </motion.a>
         <motion.div
-          className="pl-16 md:pl-20"
+          className="pl-8 md:pl-20"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{
@@ -130,7 +130,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
+      className="w-full bg-white dark:bg-neutral-950 font-sans "
       ref={containerRef}
     >
 
@@ -147,7 +147,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           style={{
             height: height + "px",
           }}
-          className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
+          className="absolute -md:left-4 left-2.5 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
         >
           <motion.div
             style={{
