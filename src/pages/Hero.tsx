@@ -3,11 +3,14 @@ import gsap from "gsap";
 import {
     motion,
 } from "motion/react";
-const words = ["Web / Mobile Developer", "Software Engineer", "Freelancer", "Engineer"];
+const words = ["Web / Mobile Developer", "Software Engineer", "Freelancer", "Fullstack Developer"];
 import { useTranslation } from "react-i18next";
 import pic from '@/assets/zakaria-braham.webp'
 import { Button } from "@/components/ui/button";
 import ContactModal from "@/components/ContactModal";
+
+import SocialMediaIcons from "@/components/SocialMediaIcons";
+
 const Hero = () => {
     const { t } = useTranslation();
 
@@ -62,10 +65,10 @@ const Hero = () => {
                             </a>
                         </div>
                     </div> */}
-                    <div className="flex lg:gap-24 gap-4 px-4 flex-col lg:flex-row items-center justify-center relative lg:px-24" >
+                    <div className="flex lg:gap-24 gap-2 px-4 flex-col-reverse lg:flex-row items-center justify-center relative lg:px-24" >
 
 
-                        <div className="text-left  flex flex-col justify-center items-start gap-4 pt-10 lg:pt-10">
+                        <div className="text-left  flex flex-col justify-center items-start gap-4  pt-3 lg:pt-10">
                             <motion.h1 initial={{ opacity: 0, y: 50 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{
@@ -109,12 +112,24 @@ const Hero = () => {
                                     delay: 0.1,
                                     ease: [0.25, 0.46, 0.45, 0.94]
                                 }} className="flex gap-4 items-center lg:justify-start w-full justify-center">
-                                <Button className="py-1.5 px-4 hover:bg-primary/70 cursor-pointer bg-primary rounded-3xl">My resume</Button>
+                                <Button className="py-1.5 px-4 hover:bg-primary/70 cursor-pointer bg-primary rounded-3xl">Resume</Button>
                                 <ContactModal />
 
                             </motion.div>
+                            <motion.div
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{
+                                    duration: 1,
+                                    delay: 0.3,
+                                    ease: [0.25, 0.46, 0.45, 0.94]
+                                }}
+                                className="flex justify-center lg:mt-5 mt-2 items-center w-full">
+                                <SocialMediaIcons />
+
+                            </motion.div>
                         </div>
-                          <motion.img
+                        <motion.img
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{
@@ -124,7 +139,7 @@ const Hero = () => {
                             }}
                             src={pic}
                             alt="Zakaria BRAHAM"
-                            className="mx-auto border h-96 w-80 rounded-xl object-top object-cover"
+                            className="mx-auto border lg:h-96 h-80 w-80 mt-4 lg:mt-0 rounded-xl object-top object-cover"
                         />
                     </div>
                 </div>
