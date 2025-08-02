@@ -10,6 +10,7 @@ import React, { useEffect, useRef, useState } from "react";
 interface TimelineEntry {
   title: string;
   link?: string;
+  logo?: string;
   content: React.ReactNode;
 }
 
@@ -76,7 +77,7 @@ const TimelineItem = ({
         >
 
           {item.title}
-            <img
+          <img
             src={item.logo}
             alt={item.title}
             className="lg:h-16 lg:w-48 w-24 h-10 object-contain rounded"
