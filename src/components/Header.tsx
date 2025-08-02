@@ -39,11 +39,11 @@ export default function Header() {
     }, []);
     return (
         <div className="bg-white justify-center flex items-center w-full">
-            <header className={` fixed   items-center   top-0 rounded-b-lg lg:rounded-xl bg-white  z-50 transition-all duration-300 ${scrolled ? " shadow 2xl:w-5xl lg:mt-4 lg:w-4xl w-full backdrop-blur-2xl    bg-white/60 transition-all duration-300 " : "lg:bg-transparent w-full"
+            <header className={` fixed   items-center   top-0 rounded-b-lg lg:rounded-xl bg-white  z-50 transition-all duration-300 ${scrolled ? " shadow 2xl:w-5xl lg:mt-4 lg:w-4xl w-full backdrop-blur-2xl    bg-white/70 transition-all duration-300 " : "lg:bg-transparent w-full"
                 }`} >
                 <nav aria-label="Global" className="">
                     <div className="flex  w-full  items-center  lg:justify-center justify-between  py-3 ">
-                        <div className={`lg:px-6 px-2 flex lg:justify-center w-full justify-between  items-center transition-all duration-300  ${scrolled ? "lg:gap-24 gap-2" : "xl:gap-30 lg:gap-16 gap-2"}`}>
+                        <div className={`lg:px-6 px-2 flex lg:justify-center w-full justify-between  items-center transition-all duration-300  ${scrolled ? "lg:gap-14 gap-2" : "xl:gap-30 lg:gap-16 gap-2"}`}>
                             <a href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
 
                                <FiTerminal className="text-xl text-primary" /> 
