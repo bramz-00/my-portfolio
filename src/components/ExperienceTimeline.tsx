@@ -13,17 +13,22 @@ export default function ExperienceTimeline() {
     m2i: m2iLogo,
     bdigitall: bdigitallLogo,
   };
-  const entries = t("experiance.entries", { returnObjects: true }) as {
+  const entries = t("experience.entries", { returnObjects: true }) as {
     title: string;
     company: string;
     date: string;
     link: string;
     logo: string;
-
+    responsibilities?: string[];
+    projects?: string[];
     description?: string;
   }[];
 
-  const data = entries.map((entry) => ({
+const data = entries.map((entry) => {
+  const projects = entry.projects ?? [];
+  const responsibilities = entry.responsibilities ?? [];
+
+  return {
     title: entry.company,
     link: entry.link,
     logo: logoMap[entry.logo],
@@ -32,17 +37,42 @@ export default function ExperienceTimeline() {
         <p className="mb-2 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
           {entry.date}
         </p>
-        <p className="text-sm text-gray-600 dark:text-gray-300">
-          {entry.description}
-        </p>
+
+        {entry.description && (
+          <p className="mb-2 text-sm text-gray-600 dark:text-gray-300">{entry.description}</p>
+        )}
+
+        {responsibilities.length > 0 && (
+          <div className="mb-2">
+            <p className="font-semibold text-gray-800 dark:text-gray-200">Responsibilities:</p>
+            <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-300">
+              {responsibilities.map((item, index) => (
+                <li key={`res-${index}`}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {projects.length > 0 && (
+          <div>
+            <p className="font-semibold text-gray-800 dark:text-gray-200">Projects:</p>
+            <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-300">
+              {projects.map((project, index) => (
+                <li key={`proj-${index}`}>{project}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     ),
-  }));
+  };
+});
+
 
   return (
     <section id="experience" className="py-16 w-full">
-      <h2 className="text-4xl font-bold mb-12 text-left border-b pb-4">
-        {t("experiance.title")}
+      <h2 className="text-4xl font-bold mb-6 text-left border-b pb-2">
+        {t("experience.title")}
       </h2>
       <div className="relative w-full overflow-clip">
         <Timeline data={data} />

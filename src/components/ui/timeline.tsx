@@ -61,8 +61,10 @@ const TimelineItem = ({
               type: "spring",
               stiffness: 300
             }}
-            className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2"
-          />
+            className="h-4 w-4 rounded-full bg-primary  dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2"
+         
+         />
+          
         </motion.div>
 
         <motion.a target="_blank" rel="noopener noreferrer" href={item.link}
@@ -73,15 +75,18 @@ const TimelineItem = ({
             delay: index * 0.1 + 0.3,
             ease: [0.25, 0.46, 0.45, 0.94]
           }}
-          className=" text-xl flex items-center w-full justify-between pl-16 md:pl-20 md:text-xl font-bold text-neutral-500 dark:text-neutral-500"
+          className=" text-xl flex lg:flex-row gap-4 lg:items-center items-start flex-col-reverse w-full justify-between pl-16 md:pl-20 md:text-xl font-bold text-neutral-500 dark:text-neutral-500"
         >
 
           {item.title}
-          <img
-            src={item.logo}
-            alt={item.title}
-            className="lg:h-16 lg:w-48 w-24 h-10 object-contain rounded"
-          />
+          <div className="lg:h-16 lg:w-48 w-36 h-10 flex items-center justify-start">
+            <img
+              src={item.logo}
+              alt={item.title}
+              className=" object-contain rounded"
+            />
+
+          </div>
 
         </motion.a>
         <motion.div
@@ -117,7 +122,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 10%", "end 50%"],
+    offset: ["start 50%", "end 100%"],
   });
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
@@ -156,7 +161,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               ease: [0.25, 0.46, 0.45, 0.94],
               delay: 0.5
             }}
-            className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full origin-top"
+            className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-purple-500 via-primary to-transparent from-[0%] via-[10%] rounded-full origin-top"
           />
         </div>
       </div>

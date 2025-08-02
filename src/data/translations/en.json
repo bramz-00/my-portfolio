@@ -15,8 +15,8 @@
     "education": "Education",
     "contact-me": "Contacte me"
   },
-  "experiance": {
-    "title": "Experiance",
+   "experience": {
+    "title": "Experience",
     "entries": [
       {
         "title": "Fullstack Developer",
@@ -24,23 +24,47 @@
         "date": "May 2025 - Present",
         "link": "https://aladvise.com",
         "logo": "aladvise",
-        "description": "Création d'interfaces web modernes avec React et Tailwind CSS."
+        "description": "Création d'interfaces web modernes avec React et Tailwind CSS.",
+        "responsibilities": [
+          "Developed new features using React and Tailwind.",
+          "Collaborated with backend team for API integration."
+        ],
+        "projects": [
+          "Company Dashboard",
+          "Internal HR Management Tool"
+        ]
       },
       {
-        "title": "Mid Software Engineer Backend Developer",
+        "title": "Mid Software Engineer / Backend Developer",
         "company": "BdigitAll - Paper Zero",
         "date": "Jan 2025 - May 2025",
         "link": "https://bdigitall.co/",
         "logo": "bdigitall",
-        "description": "Contribution aux outils internes avec Vue.js et Laravel."
+        "description": "Contribution aux outils internes avec Vue.js et Laravel.",
+        "responsibilities": [
+          "Built reusable backend services using Laravel.",
+          "Implemented REST APIs and integrated with frontend."
+        ],
+        "projects": [
+          "E-signature Platform",
+          "Digital Workflow Automation"
+        ]
       },
       {
         "title": "Fullstack Developer",
         "company": "M2I Services",
-        "link": "https://m2i-services.com/",
         "date": "Oct 2023 - Jan 2025",
+        "link": "https://m2i-services.com/",
         "logo": "m2i",
-        "description": "Contribution aux outils internes avec Vue.js et Laravel."
+        "description": "Contribution aux outils internes avec Vue.js et Laravel.",
+        "responsibilities": [
+          "Created web modules using Vue.js and Laravel.",
+          "Maintained and improved legacy systems."
+        ],
+        "projects": [
+          "Project Tracking Tool",
+          "Client Reporting Dashboard"
+        ]
       }
     ]
   },
