@@ -9,7 +9,6 @@ import { RxInfoCircled } from "react-icons/rx";
 import { TbChartDots3 } from "react-icons/tb";
 import { BsDiagram2 } from "react-icons/bs";
 import { IoSchoolOutline } from "react-icons/io5";
-import { PiContactlessPaymentLight } from "react-icons/pi";
 import { MobileBottomNavbar } from './MobileBottomNavbar';
 import { FiTerminal } from 'react-icons/fi';
 export default function Header() {
@@ -21,7 +20,6 @@ export default function Header() {
         { name: t("nav.skills"), icon: TbChartDots3, href: "#skills" },
         { name: t("nav.education"), icon: IoSchoolOutline, href: "#education" },
         { name: t("nav.projects"), icon: BsDiagram2, href: "#projects" },
-        { name: t("nav.contact-me"), icon: PiContactlessPaymentLight, href: "#contact-me" },
 
     ];
 
@@ -39,7 +37,7 @@ export default function Header() {
     }, []);
     return (
         <div className="bg-white justify-center flex items-center w-full">
-            <header className={` fixed   items-center   top-0 rounded-b-lg lg:rounded-xl bg-white  z-50 transition-all duration-300 ${scrolled ? " shadow 2xl:w-5xl lg:mt-4 lg:w-4xl w-full backdrop-blur-2xl    bg-white/70 transition-all duration-300 " : "lg:bg-transparent w-full"
+            <header className={` fixed   items-center   top-0 rounded-b-lg lg:rounded-xl bg-white  z-50 transition-all duration-300 ${scrolled ? " shadow 2xl:w-3xl lg:mt-4 lg:w-3xl w-full backdrop-blur-2xl    bg-white/70 transition-all duration-300 " : "lg:bg-transparent w-full"
                 }`} >
                 <nav aria-label="Global" className="">
                     <div className="flex  w-full  items-center  lg:justify-center justify-between  py-3 ">

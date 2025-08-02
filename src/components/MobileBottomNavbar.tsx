@@ -33,7 +33,7 @@ export function MobileBottomNavbar({ navigation }: MobileNavbarProps) {
             >
 
               <IconComponent className="text-xl" />
-              <span className="text-[8px]">{t(item.name)}</span>
+              <span className="text-xs">{t(item.name)}</span>
 
             </a>
           );

@@ -52,7 +52,7 @@ const Hero = () => {
                         className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
                     />
                 </div>
-                <div className="mx-auto max-w-5xl py-16 sm:py-24 lg:py-32 relative">
+                <div className="mx-auto max-w-5xl py-16 sm:py-24 lg:py-28 2xl:py-36 relative">
                     {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                         <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                             Announcing our next round of funding.{' '}
@@ -62,7 +62,7 @@ const Hero = () => {
                             </a>
                         </div>
                     </div> */}
-                    <div className="flex lg:gap-24 gap-4 px-4 flex-col lg:flex-row items-start justify-start relative lg:px-24" >
+                    <div className="flex lg:gap-24 gap-4 px-4 flex-col lg:flex-row items-center justify-center relative lg:px-24" >
 
 
                         <div className="text-left  flex flex-col justify-center items-start gap-4 pt-10 lg:pt-10">
