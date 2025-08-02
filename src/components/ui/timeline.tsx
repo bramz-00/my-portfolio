@@ -75,7 +75,7 @@ const TimelineItem = ({
             delay: index * 0.1 + 0.3,
             ease: [0.25, 0.46, 0.45, 0.94]
           }}
-          className=" text-xl flex lg:flex-row gap-4 lg:items-center items-start flex-col-reverse w-full justify-between pl-8 md:pl-20 md:text-xl font-bold text-neutral-500 dark:text-neutral-500"
+          className=" text-xl flex lg:flex-row gap-4 lg:items-center items-start flex-col-reverse w-full justify-between pl-10 md:pl-20 md:text-xl font-bold text-neutral-500 dark:text-neutral-500"
         >
 
           {item.title}
@@ -90,7 +90,7 @@ const TimelineItem = ({
 
         </motion.a>
         <motion.div
-          className="pl-8 md:pl-20"
+          className="pl-10 md:pl-20"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{
