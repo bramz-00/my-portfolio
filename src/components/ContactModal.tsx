@@ -54,7 +54,7 @@ const ContactModal = () => {
             <DialogTrigger asChild>
                 <Button className="py-1.5 px-4 hover:bg-primary/10 cursor-pointer capitalize bg-white border border-primary text-primary rounded-3xl">Send me a message</Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-xl rounded-3xl p-8">
+            <DialogContent className="sm:max-w-xl rounded-3xl p-8 overflow-y-auto max-h-[90vh] scroll-py-8">
                 <DialogHeader>
                     <DialogTitle>Get in Touch</DialogTitle>
                     <DialogDescription>
