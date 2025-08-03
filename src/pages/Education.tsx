@@ -52,7 +52,7 @@ const Education = () => {
       scale: 1,
       transition: {
         duration: 0.6,
-        ease: 'easeOut' as const, // ✅ Ajout du `as const`
+        ease: 'easeOut' as const, 
         staggerChildren: 0.1,
       },
     },
@@ -65,7 +65,7 @@ const Education = () => {
       x: 0,
       transition: {
         duration: 0.4,
-        ease: 'easeOut' as const, // ✅
+        ease: 'easeOut' as const, 
       },
     },
   };
@@ -77,7 +77,7 @@ const Education = () => {
       scale: 1,
       transition: {
         duration: 0.3,
-        ease: 'easeOut' as const, // ✅
+        ease: 'easeOut' as const, 
       },
     },
   };
@@ -90,7 +90,7 @@ const Education = () => {
       rotate: 0,
       transition: {
         duration: 0.5,
-        ease: 'easeOut' as const, // ✅
+        ease: 'easeOut' as const, 
       },
     },
   };
