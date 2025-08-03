@@ -54,7 +54,7 @@ const ContactModal = () => {
             <DialogTrigger asChild>
                 <Button className="py-1.5 px-4 hover:bg-primary/10 cursor-pointer capitalize bg-white border border-primary text-primary rounded-3xl">Send me a message</Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-xl rounded-3xl p-8 overflow-y-auto max-h-[90vh] scroll-py-8">
+            <DialogContent className="sm:max-w-xl max-h-[90dvh] overflow-y-auto rounded-3xl p-8">
                 <DialogHeader>
                     <DialogTitle>Get in Touch</DialogTitle>
                     <DialogDescription>
@@ -62,7 +62,7 @@ const ContactModal = () => {
                     </DialogDescription>
                 </DialogHeader>
 
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form onSubmit={handleSubmit} className="space-y-4 scroll-pb-32">
                     <input type="hidden" name="_captcha" value="false" />
                     <input type="hidden" name="_template" value="table" />
                     <input type="hidden" name="_autoresponse" value="Thank you! I’ll get back to you soon." />
