@@ -85,7 +85,7 @@ const ContactModal = () => {
                     </div>
                     <DialogFooter>
                         <Button type="submit" disabled={loading} className="y-1.5 px-8 hover:bg-primary/70 cursor-pointer bg-primary rounded-3xl">
-                            {loading ? "Sending..." : "Send"}
+                            {loading ? "Sending..." : "Shoot"}
                         </Button>
                     </DialogFooter>
                 </form>

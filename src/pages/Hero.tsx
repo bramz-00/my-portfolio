@@ -41,7 +41,7 @@ const Hero = () => {
         return () => ctx.revert();
     }, []);
     return (
-        <section id="home" className="lg:h-screen w-full relative">
+        <section id="home" className=" w-full relative">
             <div className="relative isolate px-6  lg:px-8">
                 <div
                     aria-hidden="true"
@@ -124,7 +124,11 @@ const Hero = () => {
                                     delay: 0.3,
                                     ease: [0.25, 0.46, 0.45, 0.94]
                                 }}
-                                className="flex justify-center lg:mt-5 mt-2 items-center w-full">
+                                className=" flex flex-col justify-start lg:mt-5 mt-2 items-start w-full">
+                                                <h2 className="border-b pb-2 w-full text-primary">
+                                                    {t("nav.contact-me")}
+                                                </h2>
+
                                 <SocialMediaIcons />
 
                             </motion.div>

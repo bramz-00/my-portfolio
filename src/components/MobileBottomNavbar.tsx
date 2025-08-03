@@ -18,7 +18,7 @@ export function MobileBottomNavbar({ navigation }: MobileNavbarProps) {
 
 
   return (
-    <div className="fixed bg-white inset-x-0 mx-auto  rounded-xl  bottom-3 left-0 z-50 w-11/12 h-16  overflow-hidden border sm:bottom-5 sm:shadow-lg sm:shadow-base-500/30 hover:shadow-md duration-300 sm:border   sm:max-w-lg sm:rounded-xl">
+    <div className="fixed bg-white inset-x-0 mx-auto  rounded-xl  bottom-2 left-0 z-50 w-11/12 h-16  overflow-hidden border sm:bottom-5 sm:shadow-lg sm:shadow-base-500/30 hover:shadow-md duration-300 sm:border   sm:max-w-lg sm:rounded-xl">
 
 
       <div className=" h-full flex justify-between items-center px-2 ">
