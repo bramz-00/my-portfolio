@@ -76,14 +76,41 @@
         "institution": "University of Bejaia - Algeria",
         "year": "2021 - 2023",
         "link": "https://univ-bejaia.dz/",
-        "description": "Specialized in Web and Cloud Engineering."
+        "description": "Specialized in Software Engineering.",
+        "projects": [
+          {
+            "title": "Goodswap - Non-profit App",
+            "link": "https://github.com/bramz-00/cloud-app"
+          },
+          {
+            "title": "RenDoc - Medical Appointment App",
+            "link": "https://github.com/bramz-00/ecommerce"
+          }
+        ],
+        "skills": [
+          "Laravel","Oracle","Typescript","ReactJS","Web Services","MERN Stack","Scrum","PosgreSQL","Networking","Hadoop"
+        ]
       },
       {
         "degree": "Bachelor in Computer Science",
         "institution": "University of Bejaia - Algeria",
         "link": "https://univ-bejaia.dz/",
         "year": "2018 - 2021",
-        "description": "Focused on full-stack development and systems."
+        "description": "Focused on full-stack development and systems.",
+        "skills": [
+          "Laravel","MySQL","PHP","Html5","Css3","Sass","JS","Java","Kotlin","UML","Matlab","Moblie Developement","Algorithm & Data structures"
+        ],
+        "projects": [
+          {
+            "title": "SuuQ.com - Full-Stack E-Commerce Platform",
+            "link": "https://github.com/bramz-00/ecommerce"
+          },
+          {
+            "title": "MarketApp — Inventory & Sales Management",
+            "link": "https://github.com/bramz-00/ecommerce"
+          }
+        ],
+        "recommendations": []
       }
     ]
   }
