@@ -1,34 +1,27 @@
-import Footer from "./components/Footer"
-import Header from "./components/Header"
 import { Toaster } from "./components/ui/sonner"
-import About from "./pages/About"
-import Education from "./pages/Education"
-import Experiances from "./pages/Experiances"
-import Hero from "./pages/Hero"
-import Projects from "./pages/Projects"
-import Skills from "./pages/Skills"
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import "./utils/i18n";
+import Home from "@/pages/Home";
+import ProjectDetail from "./pages/ProjectDetail";
 
 
 function App() {
 
   return (
-    <div className="w-full flex flex-col items-center justify-center ">
+      <BrowserRouter>
       <Toaster
         position="top-center"
         richColors
         toastOptions={{
           duration: 600,
         }} />
-      <Header />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experiances />
-      <Education />
-      <Footer />
-    </div>
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/project/:projectId" element={<ProjectDetail />} />
+        </Routes>
+
+      </BrowserRouter>
   )
 }
 
