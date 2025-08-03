@@ -20,8 +20,8 @@ const SocialMediaIcons = () => {
             {icons.map((item) => {
                 const IconComponent = item.icon;
                 return (
-                    <li className="border border-primary/10 rounded-full text-primary bg-white p-2 hover:bg-primary/10 transition-all duration-300  hover:-translate-y-1 " key={item.href}>
-                        <a href={item.href} className="">
+                    <li className="cursor-pointer rounded-full text-primary bg-white  p-2 hover:bg-primary/10 transition-all duration-300  hover:-translate-y-1 border border-primary/10 " key={item.href}>
+                        <a href={item.href} className="  ">
                             <IconComponent className="lg:w-8 lg:h-8 h-6 w-6" />
                         </a>
                     </li>

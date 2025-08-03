@@ -55,13 +55,13 @@ export default function Header() {
         <div className="bg-white justify-center flex items-center w-full">
             <header
                 className={`
-                    fixed -lg:top-4 z-50 top-0
+                    fixed lg:-top-4 z-50 -top-4
                     items-center
                     rounded-b-lg lg:rounded-xl
                     2xl:w-[48rem] lg:w-[48rem] w-full
                     transition-all duration-500 ease-in-out
                     transform
-                    ${showHeader ? "translate-y-0  lg:top-4" : "-translate-y-full"}
+                    ${showHeader ? "translate-y-0  lg:top-4 top-0" : "-translate-y-full"}
                     ${scrolledDown ? "bg-white/70 shadow backdrop-blur-2xl" : "bg-transparent shadow-none"}`}
             >
                 <nav aria-label="Global" className="">
