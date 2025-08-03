@@ -72,18 +72,66 @@
     "title": "Formation",
     "entries": [
       {
-        "degree": "Master en Ingénierie Logicielle",
-        "institution": "Université de Bejaia - Algerie",
+        "degree": "Master en Génie Logiciel",
+        "institution": "Université de Béjaïa - Algérie",
         "year": "2021 - 2023",
         "link": "https://univ-bejaia.dz/",
-        "description": "Specialized in Web and Cloud Engineering."
+        "description": "Spécialisé en Génie Logiciel.",
+        "projects": [
+          {
+            "title": "Goodswap - Application à but non lucratif",
+            "link": "https://github.com/bramz-00/cloud-app"
+          },
+          {
+            "title": "RenDoc - Application de prise de rendez-vous médicaux",
+            "link": "https://github.com/bramz-00/ecommerce"
+          }
+        ],
+        "skills": [
+          "Laravel",
+          "Oracle",
+          "Typescript",
+          "ReactJS",
+          "Services Web",
+          "MERN Stack",
+          "Scrum",
+          "PostgreSQL",
+          "Réseaux",
+          "Hadoop"
+        ]
       },
       {
-        "degree": "Licence en Systèmes Informatiques",
-        "institution": "Université de Bejaia - Algérie",
+        "degree": "Licence en Informatique",
+        "institution": "Université de Béjaïa - Algérie",
         "link": "https://univ-bejaia.dz/",
         "year": "2018 - 2021",
-        "description": "Focused on full-stack development and systems."
+        "description": "Axé sur le développement full-stack et les systèmes.",
+        "skills": [
+          "Laravel",
+          "MySQL",
+          "PHP",
+          "HTML5",
+          "CSS3",
+          "Sass",
+          "JS",
+          "Java",
+          "Kotlin",
+          "UML",
+          "Matlab",
+          "Développement Mobile",
+          "Algorithmes & Structures de Données"
+        ],
+        "projects": [
+          {
+            "title": "SuuQ.com - Plateforme e-commerce full-stack",
+            "link": "https://github.com/bramz-00/ecommerce"
+          },
+          {
+            "title": "MarketApp — Gestion des stocks et des ventes",
+            "link": "https://github.com/bramz-00/ecommerce"
+          }
+        ],
+        "recommendations": []
       }
     ]
   }
