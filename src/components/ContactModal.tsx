@@ -70,14 +70,14 @@ const ContactModal = () => {
                     <div>
                         <Input type="text" name="name" placeholder=" Name" required />
                     </div>
-                       <div>
+                    <div>
                         <Input
                             type="email"
                             name="email"
-                            placeholder=" Email "
+                            placeholder="Email"
                             required
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                            title="Enter a valid email"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+  title="Enter a valid email"
                         />
                     </div>
                     <div>
