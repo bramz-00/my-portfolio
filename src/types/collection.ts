@@ -14,3 +14,11 @@ export interface Project {
   featured: boolean;
 }
 
+export interface Skill {
+  name: string;
+  logo_url: string;
+  url: string;
+  level: number;
+
+
+}
