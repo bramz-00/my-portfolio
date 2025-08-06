@@ -27,7 +27,7 @@ const skillsData: SkillsData = {
       { name: "English", url: "", level: 60, logo_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOMfflVjNnT2Bwz_iiO41zdliLvQCxNFqHLA&s" },
       { name: "French", url: "", level: 80, logo_url: "https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png" },
       { name: "Arabic", url: "", level: 100, logo_url: "https://upload.wikimedia.org/wikipedia/commons/2/23/Flag_of_Saudi_Arabia.png" },
-      { name: "Amazigh", url: "", level: 100, logo_url: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Amazigh_Flag.png" },
+      
 
     ]
   },
