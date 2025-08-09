@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Link, Navigate, useNavigate } from 'react-router-dom';
+import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Github, Calendar, Tag } from 'lucide-react';
 import type { Project } from '@/types/collection';
 import Layout from '@/components/templates/Layout';
@@ -74,7 +74,6 @@ const handleBack = () => {
         <div className='flex items-center w-full gap-2 justify-end'>
           <Button
             onClick={handleBack}
-
             className=" inline-flex cursor-pointer gap-2 items-center bg-white text-primary border px-4 rounded-full py-1 border-primary  hover:text-secondary hover:bg-secondary/10 mb-8 transition-colors"
           >
             <ArrowLeft size={20} />
