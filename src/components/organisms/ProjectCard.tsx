@@ -76,7 +76,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 <div className="flex items-center justify-between">
                     <Link
                         to={`/project/${project.id}`}
-                        target="_blank"
                   
                         className="text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors"
                     >
