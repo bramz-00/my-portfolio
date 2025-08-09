@@ -6,10 +6,10 @@ import {
 const words = ["Web / Mobile Developer", "Software Engineer", "Freelancer", "Fullstack Developer"];
 import { useTranslation } from "react-i18next";
 import pic from '@/assets/zakaria-braham.webp'
-import { Button } from "@/components/ui/button";
-import ContactModal from "@/components/ContactModal";
+import { Button } from "@/components/atoms/button";
+import ContactModal from "@/components/organisms/ContactModal";
 
-import SocialMediaIcons from "@/components/SocialMediaIcons";
+import SocialMediaIcons from "@/components/organisms/SocialMediaIcons";
 
 const Hero = () => {
     const { t } = useTranslation();
@@ -55,7 +55,7 @@ const Hero = () => {
                         className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
                     />
                 </div>
-                <div className="mx-auto max-w-5xl py-16 sm:py-24 lg:py-28 2xl:py-36 relative">
+                <div className="mx-auto max-w-5xl py-8 sm:py-10 lg:py-16 2xl:py-24 relative">
                     {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                         <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                             Announcing our next round of funding.{' '}

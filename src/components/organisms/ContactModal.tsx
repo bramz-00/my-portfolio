@@ -9,10 +9,10 @@ import {
     DialogTitle,
     DialogDescription,
     DialogFooter,
-} from "@/components/ui/dialog"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
+} from "@/components/atoms/dialog"
+import { Input } from "@/components/atoms/input"
+import { Textarea } from "@/components/atoms/textarea"
+import { Button } from "@/components/atoms/button"
 import { toast } from 'sonner';
 
 const ContactModal = () => {

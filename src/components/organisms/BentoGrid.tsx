@@ -1,6 +1,6 @@
 
 
-import { BentoGrid, BentoGridItem } from "./ui/bento";
+import { BentoGrid, BentoGridItem } from "../molecules/bento";
 import { ClipboardCopy, Signature, TableColumnsSplit } from "lucide-react";
 import { TbArrowWaveRightUp, TbBoxAlignRightFilled, TbBoxAlignTopLeft, TbFileBroken } from "react-icons/tb";
 

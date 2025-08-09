@@ -1,25 +1,25 @@
-import { BentoGridDemo } from "@/components/BentoGrid"
-import Footer from "@/components/Footer"
-import Header from "@/components/Header"
+import { BentoGridDemo } from "@/components/organisms/BentoGrid"
+import Layout from "@/components/templates/Layout"
 import About from "@/pages/About"
 import Education from "@/pages/Education"
 import Experiances from "@/pages/Experiances"
 import Hero from "@/pages/Hero"
 import Projects from "@/pages/Projects"
 import Skills from "@/pages/Skills"
+import { useEffect } from "react"
+import { useLocation } from "react-router-dom"
 const Home = () => {
+
     return (
-        <div className="w-full flex flex-col items-center justify-center ">
-            <Header />
+        <Layout>
             <Hero />
             <About />
             <Skills />
             <Projects />
-            <BentoGridDemo />
+            {/* <BentoGridDemo /> */}
             <Experiances />
             <Education />
-            <Footer />
-        </div>
+        </Layout>
     )
 }
 

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next"
-import { Switch } from "@/components/ui/switch"
-import { Label } from "@/components/ui/label"
+import { Switch } from "@/components/atoms/switch"
+import { Label } from "@/components/atoms/label"
 import { useState, useEffect } from "react"
 
 export function LanguageSwitcher() {

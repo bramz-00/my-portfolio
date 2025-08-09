@@ -36,17 +36,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 </div>
             )}
 
-            <div className="p-6">
+            <div className="p-4">
                 {/* Header */}
-                <div className="flex items-start justify-between mb-3">
-                    <div className="flex-1">
-                        <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                <div className="flex lg:flex-row flex-col items-start justify-between gap-2 mb-3">
+                    <div className="">
+                        <h3 className="lg:text-lg text-sm  font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
                             {project.title}
-                            {project.featured && (
-                                <span className="ml-2 px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">
-                                    Featured
-                                </span>
-                            )}
+
                         </h3>
                     </div>
                     <span className={`px-2 py-1 rounded-full text-xs font-medium ${getStatusColor(project.status)}`}>
@@ -80,6 +76,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 <div className="flex items-center justify-between">
                     <Link
                         to={`/project/${project.id}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors"
                     >
                         View Details →

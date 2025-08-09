@@ -1,7 +1,9 @@
 import type { Project } from "@/types/collection";
-import  { useState } from 'react';
-import {  Filter, Search } from 'lucide-react';
-import ProjectCard from "@/components/ProjectCard";
+import { useState } from 'react';
+import { Filter, Search } from 'lucide-react';
+import ProjectCard from "@/components/organisms/ProjectCard";
+import { Combobox } from "@/components/molecules/combobox";
+import CustomCarousel from "@/components/organisms/CustomCarousel";
 
 
 const projectsData: Project[] = [
@@ -65,18 +67,18 @@ const Projects = () => {
 
   return (
     <section className=" flex flex-col w-full lg:px-24 px-8 lg:max-w-5xl" id="projects">
-      <div className="max-w-7xl mx-auto px-4 py-8">
+      <div className=" ">
 
         {/* Header Section */}
         <h2 className="text-4xl font-bold mb-2 text-left border-b pb-2">Selected Work</h2>
 
-        {/* Projects Section
+        {/* Projects Section */}
         <h2 className="text-3xl font-bold text-gray-900 mb-4 md:mb-0">
           Projects
           <span className="ml-2 text-sm font-normal text-gray-500">
             ({filteredProjects.length} projects)
           </span>
-        </h2> */}
+        </h2>
         <section id="projects" className="mb-16">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
 
@@ -97,30 +99,19 @@ const Projects = () => {
               {/* Status Filter */}
 
               <div className="flex lg:flex-row gap-3 flex-col w-full justify-end">
-                <select
+
+                <Combobox
+                  data={statuses}
                   value={selectedStatus}
-                  onChange={(e) => setSelectedStatus(e.target.value)}
-                  className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                >
-                  {statuses.map(status => (
-                    <option key={status} value={status}>
-                      {status === 'all' ? 'All Status' : status.charAt(0).toUpperCase() + status.slice(1).replace('-', ' ')}
-                    </option>
-                  ))}
-                </select>
+                  onChange={setSelectedStatus}
+                />
 
                 {/* Category Filter */}
-                <select
+                <Combobox
+                  data={categories}
                   value={selectedCategory}
-                  onChange={(e) => setSelectedCategory(e.target.value)}
-                  className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                >
-                  {categories.map(category => (
-                    <option key={category} value={category}>
-                      {category === 'all' ? 'All Categories' : category}
-                    </option>
-                  ))}
-                </select>
+                  onChange={setSelectedCategory}
+                />
               </div>
             </div>
           </div>
@@ -135,17 +126,18 @@ const Projects = () => {
               <p className="text-gray-500">Try adjusting your search or filters</p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-              {sortedProjects.map((project) => (
-                <ProjectCard key={project.id} project={project} />
-              ))}
-            </div>
+            <CustomCarousel
+              data={sortedProjects}
+              renderItem={(project, index) => <ProjectCard key={index} project={project} />}
+            />
+
           )}
         </section>
+
       </div>
 
 
-     
+
     </section>
   )
 }

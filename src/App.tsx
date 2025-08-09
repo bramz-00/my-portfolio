@@ -1,4 +1,4 @@
-import { Toaster } from "./components/ui/sonner"
+import { Toaster } from "./components/atoms/sonner"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import "./utils/i18n";

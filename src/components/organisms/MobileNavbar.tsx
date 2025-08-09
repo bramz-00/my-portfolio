@@ -4,7 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx"
 import { CgClose } from "react-icons/cg"
 import React, { type ComponentType } from "react";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/atoms/button"
 import {
   Drawer,
   DrawerContent,
@@ -13,7 +13,7 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer"
+} from "@/components/atoms/drawer"
 import { useTranslation } from "react-i18next"
 import { scrollToAndClose } from "@/utils/scrollTo";
 type NavItem = {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Code, Database, Server, Zap, Users, Globe, Plus, type LucideIcon, AppWindow, Languages } from 'lucide-react';
-import SkillCard from '@/components/SkillCard';
+import SkillCard from '@/components/organisms/SkillCard';
 import type { Skill } from '@/types/collection';
 
  

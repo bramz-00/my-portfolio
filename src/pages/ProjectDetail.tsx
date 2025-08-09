@@ -1,49 +1,52 @@
 import React from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useParams, Link, Navigate, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Github, Calendar, Tag } from 'lucide-react';
 import type { Project } from '@/types/collection';
-  // data/projects.json - Example projects data
-  const projectsData: Project[] = [
-    {
-      id: "ecommerce-platform",
-      title: "E-commerce Platform",
-      description: "A full-stack e-commerce solution with React and Node.js",
-      longDescription: "A comprehensive e-commerce platform built with modern technologies. Features include user authentication, product catalog, shopping cart, payment integration, and admin dashboard. The platform is designed to be scalable and maintainable with a focus on user experience.",
-      status: "completed",
-      technologies: ["React", "TypeScript", "Node.js", "MongoDB", "Stripe"],
-      images: ["/images/ecommerce-1.jpg", "/images/ecommerce-2.jpg"],
-      demoUrl: "https://demo.example.com",
-      githubUrl: "https://github.com/user/ecommerce",
-      startDate: "2024-01-15",
-      endDate: "2024-04-20",
-      category: "Web Development",
-      featured: true
-    },
-    {
-      id: "task-manager",
-      title: "Task Management App",
-      description: "A collaborative task management application",
-      longDescription: "A modern task management application that helps teams collaborate effectively. Built with React and real-time updates using WebSockets. Features include project organization, task assignment, due dates, and progress tracking.",
-      status: "in-progress",
-      technologies: ["React", "TypeScript", "Socket.io", "Express"],
-      images: ["/images/taskmanager-1.jpg"],
-      githubUrl: "https://github.com/user/taskmanager",
-      startDate: "2024-05-01",
-      category: "Productivity",
-      featured: false
-    }
-  ];
+import Layout from '@/components/templates/Layout';
+import { Button } from '@/components/atoms/button';
+import CustomCarousel from '@/components/organisms/CustomCarousel';
+// data/projects.json - Example projects data
+const projectsData: Project[] = [
+  {
+    id: "ecommerce-platform",
+    title: "E-commerce Platform",
+    description: "A full-stack e-commerce solution with React and Node.js",
+    longDescription: "A comprehensive e-commerce platform built with modern technologies. Features include user authentication, product catalog, shopping cart, payment integration, and admin dashboard. The platform is designed to be scalable and maintainable with a focus on user experience.",
+    status: "completed",
+    technologies: ["React", "TypeScript", "Node.js", "MongoDB", "Stripe"],
+    images: ["/images/ecommerce-1.jpg", "/images/ecommerce-2.jpg"],
+    demoUrl: "https://demo.example.com",
+    githubUrl: "https://github.com/user/ecommerce",
+    startDate: "2024-01-15",
+    endDate: "2024-04-20",
+    category: "Web Development",
+    featured: true
+  },
+  {
+    id: "task-manager",
+    title: "Task Management App",
+    description: "A collaborative task management application",
+    longDescription: "A modern task management application that helps teams collaborate effectively. Built with React and real-time updates using WebSockets. Features include project organization, task assignment, due dates, and progress tracking.",
+    status: "in-progress",
+    technologies: ["React", "TypeScript", "Socket.io", "Express"],
+    images: ["/images/taskmanager-1.jpg"],
+    githubUrl: "https://github.com/user/taskmanager",
+    startDate: "2024-05-01",
+    category: "Productivity",
+    featured: false
+  }
+];
 const ProjectDetail: React.FC = () => {
   const { projectId } = useParams<{ projectId: string }>();
-  
+
   // Find the project by ID
   const project = projectsData.find((p: Project) => p.id === projectId);
-  
+
   // If project not found, redirect to home
   if (!project) {
     return <Navigate to="/" replace />;
   }
-  
+
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'completed':
@@ -58,21 +61,29 @@ const ProjectDetail: React.FC = () => {
         return 'bg-gray-100 text-gray-800 border-gray-200';
     }
   };
-  
+    const navigate = useNavigate();
+
+const handleBack = () => {
+  navigate("/", { state: { scrollTo: "projects" } });
+};
+
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 py-8">
+    <Layout>
+      <div className="max-w-4xl mx-auto px-4 py-12">
         {/* Back Navigation */}
-        <Link 
-          to="/" 
-          className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 mb-8 transition-colors"
-        >
-          <ArrowLeft size={20} />
-          Back to Portfolio
-        </Link>
-        
+        <div className='flex items-center w-full gap-2 justify-end'>
+          <Button
+            onClick={handleBack}
+
+            className=" inline-flex cursor-pointer gap-2 items-center bg-white text-primary border px-4 rounded-full py-1 border-primary  hover:text-secondary hover:bg-secondary/10 mb-8 transition-colors"
+          >
+            <ArrowLeft size={20} />
+            Back
+          </Button>
+        </div>
+
         {/* Project Header */}
-        <div className="bg-white rounded-lg shadow-sm border p-8 mb-8">
+        <div className="bg-white rounded-2xl  border p-8 mb-8">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
             <div>
               <h1 className="text-3xl font-bold text-gray-900 mb-2">
@@ -102,7 +113,7 @@ const ProjectDetail: React.FC = () => {
                     href={project.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 px-3 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-sm"
+                    className="inline-flex items-center gap-1 px-3 py-2 bg-primary text-white rounded-md hover:bg-blue-700 transition-colors text-sm"
                   >
                     <ExternalLink size={16} />
                     Demo
@@ -122,7 +133,7 @@ const ProjectDetail: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Technologies */}
           <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech) => (
@@ -135,30 +146,39 @@ const ProjectDetail: React.FC = () => {
             ))}
           </div>
         </div>
-        
+
         {/* Project Images */}
+        <div className=' w-full'>
+
+
         {project.images.length > 0 && (
-          <div className="bg-white rounded-lg shadow-sm border p-8 mb-8">
+          <div className="bg-white rounded-2xl border lg:p-16 p-4 py-8 mb-8">
             <h2 className="text-xl font-semibold text-gray-900 mb-4">
               Screenshots
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {project.images.map((image, index) => (
-                <div key={index} className="aspect-video bg-gray-100 rounded-lg overflow-hidden">
+          
+            <CustomCarousel
+              data={project.images}
+              renderItem={(image, index) => 
+              <div className=''>
+               <div key={index} className="aspect-video bg-gray-100 rounded-lg overflow-hidden">
                   <img
                     src={image}
                     alt={`${project.title} screenshot ${index + 1}`}
                     className="w-full h-full object-cover"
-                
+
                   />
                 </div>
-              ))}
-            </div>
+              
+              
+              </div>}
+            />
           </div>
         )}
-        
+        </div>
+
         {/* Project Details */}
-        <div className="bg-white rounded-lg shadow-sm border p-8">
+        <div className="bg-white rounded-2xl  border p-8">
           <h2 className="text-xl font-semibold text-gray-900 mb-4">
             About This Project
           </h2>
@@ -169,7 +189,7 @@ const ProjectDetail: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

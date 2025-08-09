@@ -1,5 +1,5 @@
 "use client";
-import { Timeline } from "./ui/timeline";
+import { Timeline } from "../molecules/timeline";
 import { useTranslation } from "react-i18next";
 import aladviseLogo from '@/assets/companies/aladvise.png';
 import m2iLogo from '@/assets/companies/m2i.png';
