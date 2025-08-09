@@ -77,7 +77,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     <Link
                         to={`/project/${project.id}`}
                         target="_blank"
-                        rel="noopener noreferrer"
+                  
                         className="text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors"
                     >
                         View Details →
