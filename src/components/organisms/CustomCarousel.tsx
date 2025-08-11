@@ -13,13 +13,13 @@ const CustomCarousel = <T,>({ data, renderItem, className }: CustomCarouselProps
   return (
     <Carousel
      
-    className={className || "w-full"}>
+    className={className || "w-full py-0"}>
       <CarouselPrevious />
       <CarouselNext />
       <CarouselContent>
         {data.map((item, index) => (
           <CarouselItem key={index}>
-            <div className="p-1">{renderItem(item, index)}</div>
+            <div className="">{renderItem(item, index)}</div>
           </CarouselItem>
         ))}
       </CarouselContent>

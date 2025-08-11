@@ -8,7 +8,8 @@ import CustomCarousel from '@/components/organisms/CustomCarousel';
 // data/projects.json - Example projects data
 const projectsData: Project[] = [
   {
-    id: "ecommerce-platform",
+    id:1,
+    slug: "ecommerce-platform",
     title: "E-commerce Platform",
     description: "A full-stack e-commerce solution with React and Node.js",
     longDescription: "A comprehensive e-commerce platform built with modern technologies. Features include user authentication, product catalog, shopping cart, payment integration, and admin dashboard. The platform is designed to be scalable and maintainable with a focus on user experience.",
@@ -23,7 +24,8 @@ const projectsData: Project[] = [
     featured: true
   },
   {
-    id: "task-manager",
+    id:2,
+    slug: "task-manager",
     title: "Task Management App",
     description: "A collaborative task management application",
     longDescription: "A modern task management application that helps teams collaborate effectively. Built with React and real-time updates using WebSockets. Features include project organization, task assignment, due dates, and progress tracking.",
@@ -37,11 +39,12 @@ const projectsData: Project[] = [
   }
 ];
 const ProjectDetail: React.FC = () => {
-  const { projectId } = useParams<{ projectId: string }>();
+const { projectId } = useParams<{ projectId: string }>();
 
-  // Find the project by ID
-  const project = projectsData.find((p: Project) => p.id === projectId);
-
+// Convertir en number avant de chercher
+const project = projectsData.find(
+  (p: Project) => p.id === Number(projectId)
+);
   // If project not found, redirect to home
   if (!project) {
     return <Navigate to="/" replace />;

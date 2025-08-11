@@ -8,7 +8,8 @@ import CustomCarousel from "@/components/organisms/CustomCarousel";
 
 const projectsData: Project[] = [
   {
-    id: "ecommerce-platform",
+    id:1,
+    slug: "ecommerce-platform",
     title: "E-commerce Platform",
     description: "A full-stack e-commerce solution with React and Node.js",
     longDescription: "A comprehensive e-commerce platform built with modern technologies. Features include user authentication, product catalog, shopping cart, payment integration, and admin dashboard. The platform is designed to be scalable and maintainable with a focus on user experience.",
@@ -23,7 +24,8 @@ const projectsData: Project[] = [
     featured: true
   },
   {
-    id: "task-manager",
+    id:2,
+    slug: "task-manager",
     title: "Task Management App",
     description: "A collaborative task management application",
     longDescription: "A modern task management application that helps teams collaborate effectively. Built with React and real-time updates using WebSockets. Features include project organization, task assignment, due dates, and progress tracking.",

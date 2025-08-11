@@ -23,7 +23,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     };
 
     return (
-        <div className="bg-white rounded-lg shadow-sm border hover:shadow-md transition-all duration-200 group">
+        <div className="bg-white rounded-lg shadow-sm border hover:shadow-md transition-all duration-200 group ">
             {/* Project Image */}
             {project.images[0] && (
                 <div className="aspect-video bg-gray-100 rounded-t-lg overflow-hidden">
