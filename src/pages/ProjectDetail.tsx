@@ -5,7 +5,8 @@ import type { Project } from '@/types/collection';
 import Layout from '@/components/templates/Layout';
 import { Button } from '@/components/atoms/button';
 import CustomCarousel from '@/components/organisms/CustomCarousel';
-// data/projects.json - Example projects data
+
+
 const projectsData: Project[] = [
   {
     id:1,
