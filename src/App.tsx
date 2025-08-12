@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "./utils/i18n";
 import Home from "@/pages/Home";
 import ProjectDetail from "./pages/ProjectDetail";
+import BackToTopButton from "./components/molecules/BackToTopButton";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         toastOptions={{
           duration: 600,
         }} />
+        <BackToTopButton/>
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project/:projectId" element={<ProjectDetail />} />
