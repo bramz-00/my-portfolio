@@ -15,7 +15,7 @@ function App() {
         position="top-center"
         richColors
         toastOptions={{
-          duration: 600,
+          duration: 700,
         }} />
         <BackToTopButton/>
         <Routes>
