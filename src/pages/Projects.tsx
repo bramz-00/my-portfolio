@@ -4,46 +4,18 @@ import { Filter, Search } from 'lucide-react';
 import ProjectCard from "@/components/organisms/ProjectCard";
 import { Combobox } from "@/components/molecules/combobox";
 import CustomCarousel from "@/components/organisms/CustomCarousel";
+import { useTranslation } from "react-i18next";
 
 
-const projectsData: Project[] = [
-  {
-    id:1,
-    slug: "ecommerce-platform",
-    title: "E-commerce Platform",
-    description: "A full-stack e-commerce solution with React and Node.js",
-    longDescription: "A comprehensive e-commerce platform built with modern technologies. Features include user authentication, product catalog, shopping cart, payment integration, and admin dashboard. The platform is designed to be scalable and maintainable with a focus on user experience.",
-    status: "completed",
-    technologies: ["React", "TypeScript", "Node.js", "MongoDB", "Stripe"],
-    images: ["/images/ecommerce-1.jpg", "/images/ecommerce-2.jpg"],
-    demoUrl: "https://demo.example.com",
-    githubUrl: "https://github.com/user/ecommerce",
-    startDate: "2024-01-15",
-    endDate: "2024-04-20",
-    category: "Web Development",
-    featured: true
-  },
-  {
-    id:2,
-    slug: "task-manager",
-    title: "Task Management App",
-    description: "A collaborative task management application",
-    longDescription: "A modern task management application that helps teams collaborate effectively. Built with React and real-time updates using WebSockets. Features include project organization, task assignment, due dates, and progress tracking.",
-    status: "in-progress",
-    technologies: ["React", "TypeScript", "Socket.io", "Express"],
-    images: ["/images/taskmanager-1.jpg"],
-    githubUrl: "https://github.com/user/taskmanager",
-    startDate: "2024-05-01",
-    category: "Productivity",
-    featured: false
-  }
-];
 const Projects = () => {
   const [selectedStatus, setSelectedStatus] = useState<string>('all');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchTerm, setSearchTerm] = useState<string>('');
+  const { t } = useTranslation();
 
   // Get unique categories and statuses
+  const projectsData = t("project.entries", { returnObjects: true }) as Project[];
+
   const categories = ['all', ...new Set(projectsData.map(p => p.category))];
   const statuses = ['all', 'completed', 'in-progress', 'planned', 'archived'];
 

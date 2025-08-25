@@ -5,47 +5,20 @@ import type { Project } from '@/types/collection';
 import Layout from '@/components/templates/Layout';
 import { Button } from '@/components/atoms/button';
 import CustomCarousel from '@/components/organisms/CustomCarousel';
+import { useTranslation } from 'react-i18next';
 
 
-const projectsData: Project[] = [
-  {
-    id:1,
-    slug: "ecommerce-platform",
-    title: "E-commerce Platform",
-    description: "A full-stack e-commerce solution with React and Node.js",
-    longDescription: "A comprehensive e-commerce platform built with modern technologies. Features include user authentication, product catalog, shopping cart, payment integration, and admin dashboard. The platform is designed to be scalable and maintainable with a focus on user experience.",
-    status: "completed",
-    technologies: ["React", "TypeScript", "Node.js", "MongoDB", "Stripe"],
-    images: ["/images/ecommerce-1.jpg", "/images/ecommerce-2.jpg"],
-    demoUrl: "https://demo.example.com",
-    githubUrl: "https://github.com/user/ecommerce",
-    startDate: "2024-01-15",
-    endDate: "2024-04-20",
-    category: "Web Development",
-    featured: true
-  },
-  {
-    id:2,
-    slug: "task-manager",
-    title: "Task Management App",
-    description: "A collaborative task management application",
-    longDescription: "A modern task management application that helps teams collaborate effectively. Built with React and real-time updates using WebSockets. Features include project organization, task assignment, due dates, and progress tracking.",
-    status: "in-progress",
-    technologies: ["React", "TypeScript", "Socket.io", "Express"],
-    images: ["/images/taskmanager-1.jpg"],
-    githubUrl: "https://github.com/user/taskmanager",
-    startDate: "2024-05-01",
-    category: "Productivity",
-    featured: false
-  }
-];
 const ProjectDetail: React.FC = () => {
-const { projectId } = useParams<{ projectId: string }>();
+  const { projectId } = useParams<{ projectId: string }>();
+  const { t } = useTranslation();
+  
+  // Get unique categories and statuses
+  const projectsData = t("project.entries", { returnObjects: true }) as Project[];
 
-// Convertir en number avant de chercher
-const project = projectsData.find(
-  (p: Project) => p.id === Number(projectId)
-);
+  // Convertir en number avant de chercher
+  const project = projectsData.find(
+    (p: Project) => p.id === Number(projectId)
+  );
   // If project not found, redirect to home
   if (!project) {
     return <Navigate to="/" replace />;
@@ -65,11 +38,11 @@ const project = projectsData.find(
         return 'bg-gray-100 text-gray-800 border-gray-200';
     }
   };
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-const handleBack = () => {
-  navigate("/", { state: { scrollTo: "projects" } });
-};
+  const handleBack = () => {
+    navigate("/", { state: { scrollTo: "projects" } });
+  };
 
   return (
     <Layout>
@@ -154,30 +127,30 @@ const handleBack = () => {
         <div className=' w-full'>
 
 
-        {project.images.length > 0 && (
-          <div className="bg-white rounded-2xl border lg:p-16 p-4 py-8 mb-8">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">
-              Screenshots
-            </h2>
-          
-            <CustomCarousel
-              data={project.images}
-              renderItem={(image, index) => 
-              <div className=''>
-               <div key={index} className="aspect-video bg-gray-100 rounded-lg overflow-hidden">
-                  <img
-                    src={image}
-                    alt={`${project.title} screenshot ${index + 1}`}
-                    className="w-full h-full object-cover"
+          {project.images.length > 0 && (
+            <div className="bg-white rounded-2xl border lg:p-16 p-4 py-8 mb-8">
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                Screenshots
+              </h2>
 
-                  />
-                </div>
-              
-              
-              </div>}
-            />
-          </div>
-        )}
+              <CustomCarousel
+                data={project.images}
+                renderItem={(image, index) =>
+                  <div className=''>
+                    <div key={index} className="aspect-video bg-gray-100 rounded-lg overflow-hidden">
+                      <img
+                        src={image}
+                        alt={`${project.title} screenshot ${index + 1}`}
+                        className="w-full h-full object-cover"
+
+                      />
+                    </div>
+
+
+                  </div>}
+              />
+            </div>
+          )}
         </div>
 
         {/* Project Details */}
