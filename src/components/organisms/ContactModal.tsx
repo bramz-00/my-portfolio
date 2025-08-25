@@ -17,7 +17,7 @@ import { toast } from 'sonner';
 
 const ContactModal = () => {
     const [loading, setLoading] = useState(false)
-
+    const [open, setOpen] = useState(false) 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         setLoading(true)
@@ -38,7 +38,9 @@ const ContactModal = () => {
 
             if (data.success === "true" || data.success === true) {
                 toast.success("Your message has been sent successfully. Thank you!")
+                setOpen(false) 
                 form.reset()
+
             } else {
                 toast.error("Something went wrong.")
             }
@@ -50,7 +52,7 @@ const ContactModal = () => {
     }
 
     return (
-        <Dialog>
+        <Dialog open={open} onOpenChange={setOpen}>
             <DialogTrigger asChild>
                 <Button className="py-1.5 px-4 hover:bg-primary/10 cursor-pointer capitalize bg-white border border-primary text-primary rounded-3xl">Send me a message</Button>
             </DialogTrigger>

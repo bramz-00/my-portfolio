@@ -172,6 +172,105 @@
         "endDate": "2024-02-01",
         "category": "Personal",
         "featured": true
+      },
+      {
+        "id": 2,
+        "slug": "Goodswap",
+        "title": "Goodswap",
+        "description": "Plateforme de charité (don & échange d'objets & espace pour les organisations carritatives) réaliser avec (MongoDB & ExpressJS & React JS &  React Native  & NodeJS) en appliquant (SCRUM & MVC) .",
+        "longDescription": "This project is my personal portfolio where I present my work, skills, and experiences. It was built with React and Tailwind CSS for a clean, responsive UI and deployed for easy access.",
+        "status": "completed",
+        "technologies": [
+          "React",
+          "Tailwind CSS",
+          "JavaScript"
+        ],
+        "images": [
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849053/Portfolio/GOODSWAP/ScreenShot_Tool_-20230622134252_f1ntzq.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849111/Portfolio/GOODSWAP/Login_page_i6wdb4.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849687/Portfolio/GOODSWAP/Page_Article_-_Copie_v7mjyx.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849113/Portfolio/GOODSWAP/Page_Contact_gs25kf.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849040/Portfolio/GOODSWAP/Contact_Emetteur_a7c7iu.jpg",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849056/Portfolio/GOODSWAP/ALLEVENT_omygxn.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688848954/Portfolio/GOODSWAP/appmobile_jreeil.svg",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1712673722/Portfolio/GOODSWAP/Gestion_de_cagnotte_yvc42c.jpg",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849157/Portfolio/GOODSWAP/Evaluer_cette_utilisateur_mna25x.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849156/Portfolio/GOODSWAP/DETAIL_DEMANDE_txerts.jpg",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849155/Portfolio/GOODSWAP/Mes_demande_ENVOYES_vyqrwy.jpg",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849155/Portfolio/GOODSWAP/Mes_demande_RECUES_tb119k.jpg"
+        ],
+        "demoUrl": "https://res.cloudinary.com/digybqksh/video/upload/f_webm,vc_vp9,q_auto/v1730760548/Portfolio/GOODSWAP/co6jq54iehvf7afblywn",
+        "githubUrl": "",
+        "startDate": "2024-01-01",
+        "endDate": "2024-02-01",
+        "category": "Personal",
+        "featured": true
+      },
+            {
+        "id": 2,
+        "slug": "Goodswap",
+        "title": "Goodswap",
+        "description": "Plateforme de charité (don & échange d'objets & espace pour les organisations carritatives) réaliser avec (MongoDB & ExpressJS & React JS &  React Native  & NodeJS) en appliquant (SCRUM & MVC) .",
+        "longDescription": "This project is my personal portfolio where I present my work, skills, and experiences. It was built with React and Tailwind CSS for a clean, responsive UI and deployed for easy access.",
+        "status": "completed",
+        "technologies": [
+          "React",
+          "Tailwind CSS",
+          "JavaScript"
+        ],
+        "images": [
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849053/Portfolio/GOODSWAP/ScreenShot_Tool_-20230622134252_f1ntzq.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849111/Portfolio/GOODSWAP/Login_page_i6wdb4.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849687/Portfolio/GOODSWAP/Page_Article_-_Copie_v7mjyx.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849113/Portfolio/GOODSWAP/Page_Contact_gs25kf.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849040/Portfolio/GOODSWAP/Contact_Emetteur_a7c7iu.jpg",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849056/Portfolio/GOODSWAP/ALLEVENT_omygxn.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688848954/Portfolio/GOODSWAP/appmobile_jreeil.svg",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1712673722/Portfolio/GOODSWAP/Gestion_de_cagnotte_yvc42c.jpg",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849157/Portfolio/GOODSWAP/Evaluer_cette_utilisateur_mna25x.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849156/Portfolio/GOODSWAP/DETAIL_DEMANDE_txerts.jpg",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849155/Portfolio/GOODSWAP/Mes_demande_ENVOYES_vyqrwy.jpg",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849155/Portfolio/GOODSWAP/Mes_demande_RECUES_tb119k.jpg"
+        ],
+        "demoUrl": "https://res.cloudinary.com/digybqksh/video/upload/f_webm,vc_vp9,q_auto/v1730760548/Portfolio/GOODSWAP/co6jq54iehvf7afblywn",
+        "githubUrl": "",
+        "startDate": "2024-01-01",
+        "endDate": "2024-02-01",
+        "category": "Personal",
+        "featured": true
+      },
+            {
+        "id": 2,
+        "slug": "Goodswap",
+        "title": "Goodswap",
+        "description": "Plateforme de charité (don & échange d'objets & espace pour les organisations carritatives) réaliser avec (MongoDB & ExpressJS & React JS &  React Native  & NodeJS) en appliquant (SCRUM & MVC) .",
+        "longDescription": "This project is my personal portfolio where I present my work, skills, and experiences. It was built with React and Tailwind CSS for a clean, responsive UI and deployed for easy access.",
+        "status": "completed",
+        "technologies": [
+          "React",
+          "Tailwind CSS",
+          "JavaScript"
+        ],
+        "images": [
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849053/Portfolio/GOODSWAP/ScreenShot_Tool_-20230622134252_f1ntzq.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849111/Portfolio/GOODSWAP/Login_page_i6wdb4.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849687/Portfolio/GOODSWAP/Page_Article_-_Copie_v7mjyx.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849113/Portfolio/GOODSWAP/Page_Contact_gs25kf.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849040/Portfolio/GOODSWAP/Contact_Emetteur_a7c7iu.jpg",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849056/Portfolio/GOODSWAP/ALLEVENT_omygxn.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688848954/Portfolio/GOODSWAP/appmobile_jreeil.svg",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1712673722/Portfolio/GOODSWAP/Gestion_de_cagnotte_yvc42c.jpg",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849157/Portfolio/GOODSWAP/Evaluer_cette_utilisateur_mna25x.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849156/Portfolio/GOODSWAP/DETAIL_DEMANDE_txerts.jpg",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849155/Portfolio/GOODSWAP/Mes_demande_ENVOYES_vyqrwy.jpg",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688849155/Portfolio/GOODSWAP/Mes_demande_RECUES_tb119k.jpg"
+        ],
+        "demoUrl": "https://res.cloudinary.com/digybqksh/video/upload/f_webm,vc_vp9,q_auto/v1730760548/Portfolio/GOODSWAP/co6jq54iehvf7afblywn",
+        "githubUrl": "",
+        "startDate": "2024-01-01",
+        "endDate": "2024-02-01",
+        "category": "Personal",
+        "featured": true
       }
     ]
   }

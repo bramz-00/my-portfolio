@@ -101,6 +101,7 @@ const Projects = () => {
             </div>
           ) : (
             <CustomCarousel
+              grid=" lg:basis-1/2"
               data={sortedProjects}
               renderItem={(project, index) => <ProjectCard key={index} project={project} />}
             />

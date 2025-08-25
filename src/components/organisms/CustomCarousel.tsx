@@ -5,11 +5,12 @@ type CustomCarouselProps<T> = {
   data: T[];
   renderItem: (item: T, index: number) => React.ReactNode;
   className?: string;
+  grid?:string;
 };
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/molecules/carousel";
 
 
-const CustomCarousel = <T,>({ data, renderItem, className }: CustomCarouselProps<T>) => {
+const CustomCarousel = <T,>({ data, renderItem, className,grid }: CustomCarouselProps<T>) => {
   return (
     <Carousel
      
@@ -18,7 +19,7 @@ const CustomCarousel = <T,>({ data, renderItem, className }: CustomCarouselProps
       <CarouselNext />
       <CarouselContent>
         {data.map((item, index) => (
-          <CarouselItem key={index}>
+          <CarouselItem key={index} className={`${grid}`}>
             <div className="">{renderItem(item, index)}</div>
           </CarouselItem>
         ))}
