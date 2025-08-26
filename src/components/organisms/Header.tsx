@@ -16,10 +16,10 @@ export default function Header() {
 
     const navigation = [
         { name: t("nav.about"), icon: RxInfoCircled, href: "#about", },
+        { name: t("nav.projects"), icon: BsDiagram2, href: "#projects" },
         { name: t("nav.experience"), icon: CiGrid42, href: "#experience" },
         { name: t("nav.skills"), icon: TbChartDots3, href: "#skills" },
         { name: t("nav.education"), icon: IoSchoolOutline, href: "#education" },
-        { name: t("nav.projects"), icon: BsDiagram2, href: "#projects" },
 
     ];
     const [showHeader, setShowHeader] = useState(true);

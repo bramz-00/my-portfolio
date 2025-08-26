@@ -13,10 +13,10 @@ const Home = () => {
         <Layout>
             <Hero />
             <About />
-            <Skills />
             <Projects />
             {/* <BentoGridDemo /> */}
             <Experiances />
+            <Skills />
             <Education />
         </Layout>
     )

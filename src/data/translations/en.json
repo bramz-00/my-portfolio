@@ -24,14 +24,16 @@
         "date": "May 2025 - Present",
         "link": "https://aladvise.com",
         "logo": "aladvise",
-        "description": "Création d'interfaces web modernes avec React et Tailwind CSS.",
+        "description": "Fullstack Developper working on refactoring and new features using ReactJS, Tailwind, and Symfony.",
         "responsibilities": [
+          "Refacto the old front code built with twig and bootstrap to ReactJS and Tailwind.",
           "Developed new features using React and Tailwind.",
-          "Collaborated with backend team for API integration."
+          "Collaborated with backend team for API integration.",
+          "Developed new dashboard statistics features using Symfony"
         ],
         "projects": [
-          "Company Dashboard",
-          "Internal HR Management Tool"
+          "Infreelancing",
+          "CRM Management Tool for Freelancers"
         ]
       },
       {
@@ -40,14 +42,15 @@
         "date": "Jan 2025 - May 2025",
         "link": "https://bdigitall.co/",
         "logo": "bdigitall",
-        "description": "Contribution aux outils internes avec Vue.js et Laravel.",
+        "description": "Backend Developer focusing on building reusable services with Laravel.",
         "responsibilities": [
           "Built reusable backend services using Laravel.",
           "Implemented REST APIs and integrated with frontend."
         ],
         "projects": [
-          "E-signature Platform",
-          "Digital Workflow Automation"
+          "Build the CRM System API",
+          "Build the ATS System API",
+          "Build the SRM  System API"
         ]
       },
       {
@@ -56,14 +59,18 @@
         "date": "Oct 2023 - Jan 2025",
         "link": "https://m2i-services.com/",
         "logo": "m2i",
-        "description": "Contribution aux outils internes avec Vue.js et Laravel.",
+        "description": "Fullstack developer focusing on projects from scratch using Vue.js and Laravel.",
         "responsibilities": [
-          "Created web modules using Vue.js and Laravel.",
-          "Maintained and improved legacy systems."
+          "Create User Inerface using Vue.js and Tailwind.",
+          "Develop backend services using Laravel.",
+          "Collaborate with cross-functional teams to define and design new features.",
+          "Ensure the performance, quality, and responsiveness of applications.",
+          "Deploy applications and provide ongoing maintenance and support."
         ],
         "projects": [
-          "Project Tracking Tool",
-          "Client Reporting Dashboard"
+          "Fleet Management System",
+          "Project Management System with opportunities ",
+          "Portal of system ans security industrial including inverntory management"
         ]
       }
     ]
@@ -206,7 +213,7 @@
         "category": "Personal",
         "featured": true
       },
-            {
+      {
         "id": 2,
         "slug": "Goodswap",
         "title": "Goodswap",
@@ -239,7 +246,7 @@
         "category": "Personal",
         "featured": true
       },
-            {
+      {
         "id": 2,
         "slug": "Goodswap",
         "title": "Goodswap",
