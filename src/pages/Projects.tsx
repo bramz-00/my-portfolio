@@ -40,7 +40,7 @@ const Projects = () => {
 
 
   return (
-    <section className=" flex flex-col w-full lg:px-24 px-8 lg:max-w-5xl" id="projects">
+    <section className=" flex flex-col w-full lg:px-24 px-8 lg:max-w-5xl py-8 sm:py-10 lg:py-16 2xl:py-24" id="projects">
       <div className=" ">
 
         {/* Header Section */}

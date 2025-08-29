@@ -10,20 +10,20 @@ import BackToTopButton from "./components/molecules/BackToTopButton";
 function App() {
 
   return (
-      <BrowserRouter>
+    <BrowserRouter>
       <Toaster
         position="top-center"
         richColors
         toastOptions={{
           duration: 700,
         }} />
-        <BackToTopButton/>
-        <Routes>
+      <BackToTopButton />
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project/:projectId" element={<ProjectDetail />} />
-        </Routes>
+      </Routes>
 
-      </BrowserRouter>
+    </BrowserRouter>
   )
 }
 

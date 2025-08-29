@@ -6,9 +6,10 @@ import {
   Calendar,
   Award,
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const About: React.FC = () => {
-  // Animation variants for staggered children
+  const { t } = useTranslation();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -21,8 +22,8 @@ const About: React.FC = () => {
   };
 
   const itemVariants = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       y: 30,
       scale: 0.95
     },
@@ -32,7 +33,7 @@ const About: React.FC = () => {
       scale: 1,
       transition: {
         duration: 0.6,
-        ease: [0.25, 0.46, 0.45, 0.94]  as const,
+        ease: [0.25, 0.46, 0.45, 0.94] as const,
       },
     },
   };
@@ -45,7 +46,7 @@ const About: React.FC = () => {
       transition: {
         delay: 0.8 + index * 0.1,
         duration: 0.5,
-        ease: "easeOut"  as const,
+        ease: "easeOut" as const,
       },
     }),
   };
@@ -57,27 +58,27 @@ const About: React.FC = () => {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut"  as const,
+        ease: "easeOut" as const,
       },
     },
   };
 
   return (
     <motion.section
-      className="lg:px-24 px-8 lg:max-w-5xl z-10 w-full"
+      className="lg:px-24 px-8 lg:max-w-5xl py-8 sm:py-10 lg:py-16 2xl:py-24 z-10 w-full"
       id="about"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
       variants={containerVariants}
     >
-      <div className="max-w-7xl mx-auto px-4">
+      <div className=" mx-auto px-4">
         {/* Section Header */}
         <motion.h2
           className="text-4xl font-bold mb-12 text-left border-b pb-2"
           variants={titleVariants}
         >
-          About
+          {t("about.title")}
         </motion.h2>
 
         <div className="grid lg:grid-cols-3 lg:gap-12 gap-4">
@@ -86,7 +87,7 @@ const About: React.FC = () => {
             {/* Quick Info */}
             <motion.div
               className="bg-primary/3 border border-primary rounded-2xl p-6 mb-8"
-              whileHover={{ 
+              whileHover={{
                 scale: 1.02,
                 boxShadow: "0 10px 25px rgba(0,0,0,0.1)",
                 transition: { duration: 0.3 }
@@ -99,26 +100,26 @@ const About: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
               >
-                Quick Info
+                {t("about.quick-info.title")}
               </motion.h3>
               <div className="space-y-3">
                 {[
-                  { icon: MapPin, text: "Algiers, Algeria" },
-                  { icon: Calendar, text: "3+ years experience" },
-                  { icon: Award, text: "Full Stack Developer" },
+                  { icon: MapPin, text: t("about.quick-info.location") },
+                  { icon: Calendar, text: t("about.quick-info.experiance-year") },
+                  { icon: Award, text: t("about.quick-info.jobTitle") },
                 ].map((item, index) => (
                   <motion.div
                     key={index}
                     className="flex items-center gap-3 text-gray-600"
                     custom={index}
                     variants={quickInfoItemVariants}
-                    whileHover={{ 
+                    whileHover={{
                       x: 5,
                       transition: { duration: 0.2 }
                     }}
                   >
                     <motion.div
-                      whileHover={{ 
+                      whileHover={{
                         scale: 1.2,
                         rotate: 5,
                         transition: { duration: 0.2 }
@@ -151,7 +152,7 @@ const About: React.FC = () => {
                 transition={{ duration: 0.2 }}
               >
                 <motion.div
-                  whileHover={{ 
+                  whileHover={{
                     rotate: 10,
                     scale: 1.1,
                     transition: { duration: 0.3 }
@@ -159,9 +160,9 @@ const About: React.FC = () => {
                 >
                   <Users className="text-primary" />
                 </motion.div>
-                My Story
+                {t("about.my-story.title")}
               </motion.h3>
-              <motion.div 
+              <motion.div
                 className="prose prose-lg text-gray-700 space-y-4"
                 initial="hidden"
                 whileInView="visible"
@@ -176,9 +177,9 @@ const About: React.FC = () => {
                 }}
               >
                 {[
-                  "Hi, I'm Zakaria BRAHAM! I'm a passionate full-stack developer based in Algiers, with over 3 years of experience building web and mobile applications that make a difference.",
-                  "My journey in tech started when I built my first website at 16. What began as curiosity turned into a deep passion for creating digital experiences that solve real problems. I love the entire process - from understanding user needs to architecting scalable solutions.",
-                  "When I'm not coding, you'll find me exploring new technologies, contributing to open source, or sharing knowledge with the developer community. I believe in continuous learning and always staying curious about emerging trends in technology."
+                  t("about.my-story.p1"),
+                  t("about.my-story.p2"),
+                  t("about.my-story.p3"),
                 ].map((paragraph, index) => (
                   <motion.p
                     key={index}
