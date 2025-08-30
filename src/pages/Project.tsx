@@ -424,7 +424,7 @@ const ProjectsPage: React.FC = () => {
   return (
     <Layout>
 
-    <div className="flex flex-col w-full lg:px-24 px-8 lg:max-w-5xl py-8 sm:py-10 lg:py-16 2xl:py-24">
+    <div className="flex flex-col w-full lg:px-24  lg:max-w-5xl py-8 sm:py-10 lg:py-16 2xl:py-24">
       <div className="container mx-auto px-4 py-12">
         {/* Header */}
         <div className="text-center mb-12">
