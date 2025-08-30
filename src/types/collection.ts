@@ -9,6 +9,7 @@ export interface Project {
   images: string[];
   demoUrl?: string;
   githubUrl?: string;
+  logoUrl?: string;
   startDate: string;
   endDate?: string;
   category: string;

@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <div className="bg-white rounded-lg hover:shadow-sm border  transition-all duration-200 group ">
             {/* Project Image */}
             {project.images[0] && (
-                <div className="aspect-video bg-gray-100 rounded-t-lg overflow-hidden">
+                <div className="aspect-video  rounded-t-lg overflow-hidden">
                     <img
                         src={project.images[0]}
                         alt={project.title}
@@ -40,7 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 {/* Header */}
                 <div className="flex lg:flex-row flex-col items-start justify-between gap-2 mb-3">
                     <div className="">
-                        <h3 className="lg:text-lg text-sm  font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                        <h3 className="lg:text-lg text-sm  font-semibold text-gray-900 group-hover:text-primary transition-colors">
                             {project.title}
 
                         </h3>
@@ -77,7 +77,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     <Link
                         to={`/project/${project.id}`}
                   
-                        className="text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors"
+                        className="text-primary hover:text-primary font-medium text-sm transition-colors"
                     >
                         View Details →
                     </Link>
@@ -88,7 +88,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                                 href={project.demoUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="p-2 text-gray-500 hover:text-blue-600 transition-colors rounded-full hover:bg-blue-50"
+                                className="p-2 text-gray-500 hover:text-white transition-colors rounded-full hover:bg-primary/50"
                                 onClick={(e) => e.stopPropagation()}
                                 title="View Demo"
                             >

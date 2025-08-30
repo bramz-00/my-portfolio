@@ -62,7 +62,8 @@ const ProjectDetail: React.FC = () => {
         <div className="bg-white rounded-2xl  border p-8 mb-8">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
             <div>
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">
+              <img src={project.logoUrl} alt="" className='h-24 mb-4' />
+              <h1 className="text-3xl font-light uppercase text-primary mb-2">
                 {project.title}
               </h1>
               <p className="text-lg text-gray-600 mb-4">
@@ -89,7 +90,7 @@ const ProjectDetail: React.FC = () => {
                     href={project.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 px-3 py-2 bg-primary text-white rounded-md hover:bg-blue-700 transition-colors text-sm"
+                    className="inline-flex items-center gap-1 px-3 py-2 hover:text-white text-primary border border-primary rounded-md hover:bg-primary transition-colors text-sm"
                   >
                     <ExternalLink size={16} />
                     Demo
@@ -141,7 +142,7 @@ const ProjectDetail: React.FC = () => {
                       <img
                         src={image}
                         alt={`${project.title} screenshot ${index + 1}`}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
 
                       />
                     </div>
