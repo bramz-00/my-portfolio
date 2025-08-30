@@ -424,7 +424,7 @@ const ProjectsPage: React.FC = () => {
   return (
     <Layout>
 
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50">
+    <div className="flex flex-col w-full lg:px-24 px-8 lg:max-w-5xl py-8 sm:py-10 lg:py-16 2xl:py-24">
       <div className="container mx-auto px-4 py-12">
         {/* Header */}
         <div className="text-center mb-12">
@@ -560,7 +560,7 @@ const ProjectsPage: React.FC = () => {
               viewMode === 'grid'
                 ? cardFormat === 'asymmetric'
                   ? "grid grid-cols-1 lg:grid-cols-2 gap-8"
-                  : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                  : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"
                 : "space-y-6"
             }>
               {filteredProjects.map((project) =>

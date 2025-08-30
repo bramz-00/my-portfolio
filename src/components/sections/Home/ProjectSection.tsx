@@ -5,6 +5,7 @@ import ProjectCard from "@/components/organisms/ProjectCard";
 import { Combobox } from "@/components/molecules/combobox";
 import CustomCarousel from "@/components/organisms/CustomCarousel";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 
 const ProjectSection = () => {
@@ -47,12 +48,18 @@ const ProjectSection = () => {
         <h2 className="text-4xl font-bold mb-2 text-left border-b pb-2">Selected Work</h2>
 
         {/* Projects Section */}
-        <h2 className="text-3xl font-bold text-gray-900 mb-4 md:mb-0">
+      <div className="flex items-center justify-between mb-8 w-full">
+          <h2 className="text-3xl fler  font-bold text-gray-900 mb-4 md:mb-0">
           Projects
           <span className="ml-2 text-sm font-normal text-gray-500">
             ({filteredProjects.length} projects)
           </span>
+        
         </h2>
+          <Link to={"/projects"} className="text-sm font-medium text-primary hover:underline">
+          View All
+          </Link>
+      </div>
         <section id="projects" className="mb-16">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
 
