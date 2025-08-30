@@ -11,7 +11,7 @@ import ContactModal from "@/components/organisms/ContactModal";
 
 import SocialMediaIcons from "@/components/organisms/SocialMediaIcons";
 
-const Hero = () => {
+const HeroSection = () => {
     const { t } = useTranslation();
 
     const listRef = useRef<HTMLDivElement>(null);
@@ -164,4 +164,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default HeroSection

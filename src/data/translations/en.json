@@ -187,6 +187,7 @@
         ],
         "demoUrl": "https://res.cloudinary.com/digybqksh/video/upload/f_webm,vc_vp9,q_auto/v1730760548/Portfolio/GOODSWAP/co6jq54iehvf7afblywn",
         "githubUrl": "",
+        "logoUrl": "",
         "startDate": "2024-01-01",
         "endDate": "2024-02-01",
         "category": "Personal",
@@ -207,7 +208,6 @@
         "images": [
           "https://res.cloudinary.com/digybqksh/image/upload/v1756558615/Portfolio/KIndora/hompage-kindora_wdqhyc.png",
           "https://res.cloudinary.com/digybqksh/image/upload/v1756557388/Portfolio/KIndora/login-page-kindora_blp2a5.png"
-          
         ],
         "demoUrl": "https://res.cloudinary.com/digybqksh/video/upload/f_webm,vc_vp9,q_auto/v1730760548/Portfolio/GOODSWAP/co6jq54iehvf7afblywn",
         "githubUrl": "",
@@ -228,7 +228,7 @@
           "React",
           "Tailwind CSS",
           "JavaScript",
-        "Laravel"
+          "Laravel"
         ],
         "images": [
           "https://res.cloudinary.com/digybqksh/image/upload/v1756554065/Portfolio/JoodAcademy/login-page-jood_s4ngzd.png",
@@ -362,9 +362,9 @@
         "images": [
           "https://res.cloudinary.com/digybqksh/image/upload/v1688847326/Portfolio/MegaMarket/Capture_d_%C3%A9cran_2023-07-08_104051_k4owo8.jpg",
           "https://res.cloudinary.com/digybqksh/image/upload/v1688847326/Portfolio/MegaMarket/authentification_oruoya.jpg",
-           "https://res.cloudinary.com/digybqksh/image/upload/v1688847328/Portfolio/MegaMarket/liste_vente_hf48vm.jpg",
-           "https://res.cloudinary.com/digybqksh/image/upload/v1688847328/Portfolio/MegaMarket/produits_hi6qvp.jpg",
-           "https://res.cloudinary.com/digybqksh/image/upload/v1688847327/Portfolio/MegaMarket/Vente_lm36my.jpg"
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688847328/Portfolio/MegaMarket/liste_vente_hf48vm.jpg",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688847328/Portfolio/MegaMarket/produits_hi6qvp.jpg",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688847327/Portfolio/MegaMarket/Vente_lm36my.jpg"
         ],
         "demoUrl": "https://res.cloudinary.com/digybqksh/video/upload/f_webm,vc_vp9,q_auto/v1730760548/Portfolio/GOODSWAP/co6jq54iehvf7afblywn",
         "githubUrl": "",
@@ -414,6 +414,7 @@
         ],
         "demoUrl": "https://res.cloudinary.com/digybqksh/video/upload/f_webm,vc_vp9,q_auto/v1730760548/Portfolio/GOODSWAP/co6jq54iehvf7afblywn",
         "githubUrl": "",
+        "logoUrl": "",
         "startDate": "2024-01-01",
         "endDate": "2024-02-01",
         "category": "Personal",

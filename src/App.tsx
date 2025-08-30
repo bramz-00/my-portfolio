@@ -5,6 +5,7 @@ import "./utils/i18n";
 import Home from "@/pages/Home";
 import ProjectDetail from "./pages/ProjectDetail";
 import BackToTopButton from "./components/molecules/BackToTopButton";
+import Project from "./pages/Project";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <BackToTopButton />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Project />} />
         <Route path="/project/:projectId" element={<ProjectDetail />} />
       </Routes>
 

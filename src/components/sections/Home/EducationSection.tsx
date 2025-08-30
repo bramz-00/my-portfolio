@@ -23,7 +23,7 @@ type Entry = {
   recommendations?: Recommendation[];
 };
 
-const Education = () => {
+const EducationSection = () => {
   const { t } = useTranslation();
 
   const entries = t("education.entries", { returnObjects: true }) as Entry[];
@@ -277,4 +277,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default EducationSection;

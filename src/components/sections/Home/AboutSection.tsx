@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
-const About: React.FC = () => {
+const AboutSection: React.FC = () => {
   const { t } = useTranslation();
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -223,4 +223,4 @@ const About: React.FC = () => {
   );
 };
 
-export default About;
+export default AboutSection;

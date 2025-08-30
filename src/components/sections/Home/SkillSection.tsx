@@ -149,7 +149,7 @@ const skillsData: SkillsData = {
   }
 };
 
-const Skills: React.FC = () => {
+const SkillSection: React.FC = () => {
   const [expandedCard, setExpandedCard] = useState<string | null>(null);
   const [filter, setFilter] = useState<string>('all');
 
@@ -232,4 +232,4 @@ const Skills: React.FC = () => {
   );
 };
 
-export default Skills;
+export default SkillSection;

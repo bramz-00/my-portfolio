@@ -1,6 +1,6 @@
 import ExperienceTimeline from "@/components/organisms/ExperienceTimeline"
 
-const Experiances = () => {
+const ExperianceSection = () => {
   return (
     <section id="experiences" className="w-full lg:max-w-5xl  lg:px-24 px-8">
       <ExperienceTimeline />
@@ -8,4 +8,4 @@ const Experiances = () => {
   )
 }
 
-export default Experiances
+export default ExperianceSection

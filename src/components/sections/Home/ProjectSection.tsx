@@ -7,7 +7,7 @@ import CustomCarousel from "@/components/organisms/CustomCarousel";
 import { useTranslation } from "react-i18next";
 
 
-const Projects = () => {
+const ProjectSection = () => {
   const [selectedStatus, setSelectedStatus] = useState<string>('all');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchTerm, setSearchTerm] = useState<string>('');
@@ -102,7 +102,7 @@ const Projects = () => {
           ) : (
             <CustomCarousel
               grid=" lg:basis-1/2"
-              data={sortedProjects}
+              data={sortedProjects.slice(0, 3)} 
               renderItem={(project, index) => <ProjectCard key={index} project={project} />}
             />
 
@@ -117,4 +117,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default ProjectSection
