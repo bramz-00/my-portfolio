@@ -36,9 +36,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 </div>
             )}
 
-            <div className="p-4">
+            <div className="py-4">
                 {/* Header */}
-                <div className="flex lg:flex-row flex-col items-start justify-between gap-2 mb-3">
+                <div className="flex px-4 lg:flex-row flex-col items-start justify-between gap-2 mb-3">
                     <div className="">
                         <h3 className="lg:text-lg text-sm  font-semibold text-gray-900 group-hover:text-primary transition-colors">
                             {project.title}
@@ -51,12 +51,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 </div>
 
                 {/* Description */}
-                <p className="text-gray-600 mb-4 line-clamp-2">
+                <p className="text-gray-600 text-sm px-2 mb-4 line-clamp-2 ">
                     {project.description}
                 </p>
 
+
+
                 {/* Technologies */}
-                <div className="flex flex-wrap gap-1 mb-4">
+                <div className="flex px-4 flex-wrap gap-1 mb-4">
                     {project.technologies.slice(0, 3).map((tech) => (
                         <span
                             key={tech}
@@ -73,10 +75,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 </div>
 
                 {/* Actions */}
-                <div className="flex items-center justify-between">
+                <div className=" items-center justify-between px-4">
                     <Link
                         to={`/project/${project.id}`}
-                  
+
                         className="text-primary hover:text-primary font-medium text-sm transition-colors"
                     >
                         View Details →
@@ -88,7 +90,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                                 href={project.demoUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="p-2 text-gray-500 hover:text-white transition-colors rounded-full hover:bg-primary/50"
+                                className="py-2 text-gray-500 hover:text-white transition-colors rounded-full hover:bg-primary/50"
                                 onClick={(e) => e.stopPropagation()}
                                 title="View Demo"
                             >
@@ -100,7 +102,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                                 href={project.githubUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="p-2 text-gray-500 hover:text-gray-900 transition-colors rounded-full hover:bg-gray-50"
+                                className="py-2 text-gray-500 hover:text-gray-900 transition-colors rounded-full hover:bg-gray-50"
                                 onClick={(e) => e.stopPropagation()}
                                 title="View Code"
                             >
