@@ -586,31 +586,6 @@ const ProjectsPage: React.FC = () => {
 
 
 
-                    {/* Call to Action */}
-                    <div className="mt-20">
-                        <div className="relative bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-3xl p-12 text-white overflow-hidden">
-                            <div className="absolute inset-0 opacity-10">
-                                <div className="absolute top-0 left-0 w-40 h-40 bg-white rounded-full transform -translate-x-1/2 -translate-y-1/2" />
-                                <div className="absolute bottom-0 right-0 w-60 h-60 bg-white rounded-full transform translate-x-1/3 translate-y-1/3" />
-                            </div>
-                            <div className="relative text-center">
-                                <h3 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Project?</h3>
-                                <p className="text-blue-100 text-lg mb-8 max-w-3xl mx-auto leading-relaxed">
-                                    I'm passionate about bringing ideas to life through code. Whether you need a web application,
-                                    mobile app, or custom solution, let's discuss how we can work together to create something extraordinary.
-                                </p>
-                                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <button className="px-8 py-4 bg-white text-gray-900 font-bold rounded-xl hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg">
-                                        View My Resume
-                                    </button>
-                                    <button className="px-8 py-4 bg-white/20 backdrop-blur-sm text-white font-bold rounded-xl border border-white/30 hover:bg-white/30 transition-all duration-300 hover:scale-105">
-                                        Get In Touch
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
 
                 </div>
             </div>
