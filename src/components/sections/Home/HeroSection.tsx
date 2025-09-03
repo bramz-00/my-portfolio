@@ -6,7 +6,6 @@ import {
 const words = ["Web / Mobile Developer", "Software Engineer", "Freelancer", "Fullstack Developer"];
 import { useTranslation } from "react-i18next";
 import pic from '@/assets/zakaria-braham.webp'
-import { Button } from "@/components/atoms/button";
 import ContactModal from "@/components/organisms/ContactModal";
 
 import SocialMediaIcons from "@/components/organisms/SocialMediaIcons";
