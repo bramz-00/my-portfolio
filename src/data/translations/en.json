@@ -57,12 +57,11 @@
         "description": "Backend Developer focusing on building reusable services with Laravel.",
         "responsibilities": [
           "Built reusable backend services using Laravel.",
-          "Implemented REST APIs and integrated with frontend."
+          "Implemented REST APIs and integrated with frontend.",
+          "Developed and optimized APIs for CRM, ATS, and SRM systems."
         ],
         "projects": [
-          "Build the CRM System API",
-          "Build the ATS System API",
-          "Build the SRM  System API"
+          "Internal Application"
         ]
       },
       {

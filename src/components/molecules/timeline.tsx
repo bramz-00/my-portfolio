@@ -37,9 +37,9 @@ const TimelineItem = ({
         delay: index * 0.1,
         ease: [0.25, 0.46, 0.45, 0.94]
       }}
-      className="flex justify-start pt-12 w-full"
+      className="flex justify-start pt-4 w-full"
     >
-      <div className="sticky flex flex-col gap-4 z-40 items-start top-40 self-start lg:w-full">
+      <div className="sticky flex flex-col  z-40 items-start top-40 self-start lg:w-full">
         <motion.div
           initial={{ scale: 0, rotate: -180 }}
           animate={isInView ? { scale: 1, rotate: 0 } : { scale: 0, rotate: -180 }}
@@ -50,7 +50,7 @@ const TimelineItem = ({
             stiffness: 200,
             damping: 15
           }}
-          className="h-10 absolute -left-2 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center"
+          className="h-10 absolute -left-2 top-2.5 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center"
         >
           <motion.div
             initial={{ scale: 0 }}

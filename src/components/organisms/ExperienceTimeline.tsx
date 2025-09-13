@@ -29,11 +29,14 @@ const data = entries.map((entry) => {
   const responsibilities = entry.responsibilities ?? [];
 
   return {
-    title: entry.company,
+    title : entry.title,
     link: entry.link,
     logo: logoMap[entry.logo],
     content: (
       <div>
+          <p className="mb-2 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          {entry.company}
+        </p>
         <p className="mb-2 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
           {entry.date}
         </p>
