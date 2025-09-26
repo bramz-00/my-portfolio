@@ -226,18 +226,18 @@
         "technologies": [
           "React",
           "Tailwind CSS",
-          "JavaScript",
-          "Laravel"
+          "JavaScript"
+
         ],
         "images": [
           "https://res.cloudinary.com/digybqksh/image/upload/v1756554065/Portfolio/JoodAcademy/login-page-jood_s4ngzd.png",
           "https://res.cloudinary.com/digybqksh/image/upload/v1756554383/Portfolio/JoodAcademy/Dashboard-jood_zgrfwy.png"
         ],
         "demoUrl": "https://res.cloudinary.com/digybqksh/video/upload/f_webm,vc_vp9,q_auto/v1730760548/Portfolio/GOODSWAP/co6jq54iehvf7afblywn",
-        "githubUrl": "https://github.com/bramz-00/jood-academy",
+        "githubUrl": "",
         "logoUrl": "https://res.cloudinary.com/digybqksh/image/upload/v1756554088/Portfolio/JoodAcademy/logo-light-lg_wbfzd7.svg",
         "startDate": "2025-04-12",
-        "endDate": "",
+        "endDate": "2024-02-01",
         "category": "Personal",
         "featured": true
       }
