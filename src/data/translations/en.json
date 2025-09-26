@@ -376,7 +376,7 @@
       {
         "id": 9,
         "slug": "CRM et ATS et SRM",
-        "title": "BDigitAll CRM et ATS et SRM API",
+        "title": "API-CRM et ATS et SRM",
         "description": "Plateforme de charité (don & échange d'objets & espace pour les organisations carritatives) réaliser avec (MongoDB & ExpressJS & React JS &  React Native  & NodeJS) en appliquant (SCRUM & MVC) .",
         "longDescription": "This project is my personal portfolio where I present my work, skills, and experiences. It was built with React and Tailwind CSS for a clean, responsive UI and deployed for easy access.",
         "status": "completed",

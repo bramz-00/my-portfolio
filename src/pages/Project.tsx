@@ -59,11 +59,11 @@ const ProjectsPage: React.FC = () => {
         <div className="group relative bg-white rounded-3xl border-2 border-gray-100 hover:border-blue-200 transition-all duration-300 overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
 
-            <div className="p-8">
+            <div className="p-6">
                 <div className="flex items-start justify-between mb-6">
                     <div className="flex-1">
                         <div className="flex items-center gap-3 mb-2">
-                            <h3 className="text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors">
+                            <h3 className="text-lg font-bold text-gray-900 group-hover:text-primary transition-colors">
                                 {project.title}
                             </h3>
                             {project.featured && (
@@ -572,7 +572,7 @@ const ProjectsPage: React.FC = () => {
                                 viewMode === 'grid'
                                     ? cardFormat === 'asymmetric'
                                         ? "grid grid-cols-1 lg:grid-cols-2 gap-8"
-                                        : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"
+                                        : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3"
                                     : "space-y-6"
                             }>
                                 {filteredProjects.map((project) =>

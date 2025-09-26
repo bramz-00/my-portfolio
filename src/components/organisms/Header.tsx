@@ -11,7 +11,12 @@ import { BsDiagram2 } from "react-icons/bs";
 import { IoSchoolOutline } from "react-icons/io5";
 import { MobileBottomNavbar } from './MobileBottomNavbar';
 import { FiTerminal } from 'react-icons/fi';
-export default function Header() {
+
+
+interface HeaderProps {
+  isHomepage?: boolean;
+}
+export default function Header({ isHomepage }: HeaderProps)  {
     const { t } = useTranslation();
 
     const navigation = [
@@ -58,30 +63,27 @@ export default function Header() {
                     fixed lg:-top-4 z-50 -top-4
                     items-center
                     rounded-b-lg lg:rounded-xl
-                    2xl:w-[48rem] lg:w-[48rem] w-full
+                    2xl:w-[56rem] lg:w-[56rem] w-full
                     transition-all duration-500 ease-in-out
-                    transform
+                    transform px-3
                     ${showHeader ? "translate-y-0  lg:top-4 top-0" : "-translate-y-full"}
                     ${scrolledDown ? "bg-white/70 shadow backdrop-blur-2xl" : "bg-transparent shadow-none"}`}
             >
                 <nav aria-label="Global" className="">
-                    <div className="flex  w-full  items-center  lg:justify-center justify-between  py-3 ">
-                        <div className={`lg:px-2 px-2 flex lg:justify-center w-full justify-between  items-center transition-all duration-300  lg:gap-10 gap-2`}>
+                    <div className="flex  w-full  items-center justify-between  py-3 ">
+                        <div className={`lg:px-2 px-2 flex lg:justify-between w-full justify-between  items-center transition-all duration-300  lg:gap-10 gap-2`}>
                             <a href="/" className="flex items-center gap-2">
                                 <FiTerminal className="text-xl text-primary" />
-                                <span className="font-bold text-base capitalize">Zakaria Braham</span>
+                                <span className="font-bold text-base capitalize">Zakaria <strong className='uppercase'>Braham</strong></span>
                             </a>
 
 
-                            <div className="hidden lg:grid grid-cols-5 items-center text-center justify-center lg:gap-x-6 w-md ">
-                                {navigation.map((item) => {
-                                    return (
-                                        <a key={item.name} href={item.href} className="hover:text-primary  2xl:text-sm lg:text-xs text-xs gap-2 w-24 text-center  font-semibold text-gray-900">
-                                            {item.name}
+                            <div className="flex  items-center text-center justify-center lg:gap-x-6  ">
+                                
+                                        <a  href={"/projects"} className="hover:text-primary hidden lg:block 2xl:text-sm lg:text-xs text-xs gap-2 w-24 text-center  font-semibold text-gray-900">
+                                            Projets
                                         </a>
-                                    )
-                                })}
-                            </div>
+                                 
                             <div className="flex items-center justify-between gap-3">
                                 <LanguageSwitcher />
                                 <div className="block lg:hidden">
@@ -89,17 +91,18 @@ export default function Header() {
                                     <MobileNavbar navigation={navigation} />
                                 </div>
                             </div>
+                            </div>
                         </div>
 
                     </div>
                 </nav>
 
             </header>
-            <div className="flex lg:hidden">
+           {isHomepage && (<div className="flex">
 
                 <MobileBottomNavbar navigation={navigation} />
 
-            </div>
+            </div>)}
 
 
         </div>

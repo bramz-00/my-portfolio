@@ -10,7 +10,7 @@ import HeroSection from "@/components/sections/Home/HeroSection"
 const Home = () => {
 
     return (
-        <Layout>
+        <Layout isHomepage={true}>
             <HeroSection/>
             <AboutSection />
             <ProjectSection />
