@@ -41,7 +41,7 @@ const ProjectSection = () => {
 
 
   return (
-    <section className=" flex flex-col w-full lg:px-24 px-8 lg:max-w-5xl py-8 sm:py-10 lg:py-16 2xl:py-24" id="projects">
+    <section className=" flex flex-col w-full lg:px-24 px-3 lg:max-w-5xl py-8 sm:py-10 lg:py-16 2xl:py-24" id="projects">
       <div className=" ">
 
         {/* Header Section */}
@@ -99,7 +99,7 @@ const ProjectSection = () => {
 
           {/* Projects Grid */}
           {sortedProjects.length === 0 ? (
-            <div className="text-center py-12">
+            <div className="text-center py-12 ">
               <div className="text-gray-400 mb-4">
                 <Filter size={48} className="mx-auto" />
               </div>

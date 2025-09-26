@@ -28,7 +28,7 @@ const ProjectDetailCard: React.FC<ProjectDetailCardProps> = ({ project }) => {
   return (
     <div className="bg-white rounded-lg shadow-sm border hover:shadow-md transition-shadow">
       {project.images[0] && (
-        <div className="aspect-video bg-gray-100 rounded-t-lg overflow-hidden">
+        <div className=" bg-gray-100 rounded-t-lg overflow-hidden">
           <img
             src={project.images[0]}
             alt={project.title}
