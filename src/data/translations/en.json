@@ -215,8 +215,59 @@
         "endDate": "2024-02-01",
         "category": "Personal",
         "featured": true
+      },
+      {
+        "id": 3,
+        "slug": "Jood Academy",
+        "title": "Jood Academy",
+        "description": "Plateforme de charité (don & échange d'objets & espace pour les organisations carritatives) réaliser avec (MongoDB & ExpressJS & React JS &  React Native  & NodeJS) en appliquant (SCRUM & MVC) .",
+        "longDescription": "This project is my personal portfolio where I present my work, skills, and experiences. It was built with React and Tailwind CSS for a clean, responsive UI and deployed for easy access.",
+        "status": "completed",
+        "technologies": [
+          "React",
+          "Tailwind CSS",
+          "JavaScript",
+          "Laravel"
+        ],
+        "images": [
+          "https://res.cloudinary.com/digybqksh/image/upload/v1756554065/Portfolio/JoodAcademy/login-page-jood_s4ngzd.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1756554383/Portfolio/JoodAcademy/Dashboard-jood_zgrfwy.png"
+        ],
+        "demoUrl": "https://res.cloudinary.com/digybqksh/video/upload/f_webm,vc_vp9,q_auto/v1730760548/Portfolio/GOODSWAP/co6jq54iehvf7afblywn",
+        "githubUrl": "https://github.com/bramz-00/jood-academy",
+        "logoUrl": "https://res.cloudinary.com/digybqksh/image/upload/v1756554088/Portfolio/JoodAcademy/logo-light-lg_wbfzd7.svg",
+        "startDate": "2025-04-12",
+        "endDate": "",
+        "category": "Personal",
+        "featured": true
+      },
+      {
+        "id": 4,
+        "slug": "SuuQ.com",
+        "title": "SuuQ.com",
+        "description": "Plateforme de charité (don & échange d'objets & espace pour les organisations carritatives) réaliser avec (MongoDB & ExpressJS & React JS &  React Native  & NodeJS) en appliquant (SCRUM & MVC) .",
+        "longDescription": "This project is my personal portfolio where I present my work, skills, and experiences. It was built with React and Tailwind CSS for a clean, responsive UI and deployed for easy access.",
+        "status": "completed",
+        "technologies": [
+          "React",
+          "Tailwind CSS",
+          "JavaScript"
+        ],
+        "images": [
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688852013/Portfolio/SOUQ/Suuq_bqtszf.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688851993/Portfolio/SOUQ/auth_azij0f.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688852017/Portfolio/SOUQ/CAT_lfup5n.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688852011/Portfolio/SOUQ/Produit_qwubyr.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1688851994/Portfolio/SOUQ/CONTACT_hsfvwc.png"
+        ],
+        "demoUrl": "https://res.cloudinary.com/digybqksh/video/upload/f_webm,vc_vp9,q_auto/v1730760548/Portfolio/GOODSWAP/co6jq54iehvf7afblywn",
+        "githubUrl": "",
+        "logoUrl": "",
+        "startDate": "2020-03-15",
+        "endDate": "2020-10-17",
+        "category": "Academic",
+        "featured": true
       }
-
     ]
   }
 }
