@@ -109,7 +109,7 @@ const ProjectSection = () => {
           ) : (
             <CustomCarousel
               grid=" lg:basis-1/2"
-              data={sortedProjects.slice(0, 3)} 
+              data={sortedProjects.slice(0, 2)} 
               renderItem={(project, index) => <ProjectCard key={index} project={project} />}
             />
 
