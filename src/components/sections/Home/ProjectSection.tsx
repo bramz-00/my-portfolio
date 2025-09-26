@@ -41,14 +41,14 @@ const ProjectSection = () => {
 
 
   return (
-    <section className=" flex flex-col w-full lg:px-24 px-4 lg:max-w-5xl py-8 sm:py-10 lg:py-16 2xl:py-24" id="projects">
-      <div className=" px-4">
+    <section className=" flex flex-col w-full lg:px-24 px-8 lg:max-w-5xl py-8 sm:py-10 lg:py-16 2xl:py-24" id="projects">
+      <div className=" ">
 
         {/* Header Section */}
         <h2 className="text-4xl font-bold mb-2 text-left border-b pb-2">Selected Work</h2>
 
         {/* Projects Section */}
-      <div className="flex items-center justify-between mb-8  w-full">
+      <div className="flex items-center justify-between mb-8 w-full">
           <h2 className="text-3xl fler  font-bold text-gray-900 mb-4 md:mb-0">
           Projects
           <span className="ml-2 text-sm font-normal text-gray-500">
@@ -79,7 +79,7 @@ const ProjectSection = () => {
 
               {/* Status Filter */}
 
-              <div className="flex  gap-3  w-full justify-between lg:justify-end">
+              <div className="flex lg:flex-row gap-3 flex-col w-full justify-end">
 
                 <Combobox
                   data={statuses}
@@ -99,7 +99,7 @@ const ProjectSection = () => {
 
           {/* Projects Grid */}
           {sortedProjects.length === 0 ? (
-            <div className="text-center py-12 ">
+            <div className="text-center py-12">
               <div className="text-gray-400 mb-4">
                 <Filter size={48} className="mx-auto" />
               </div>
