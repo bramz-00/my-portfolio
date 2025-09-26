@@ -41,7 +41,7 @@ const ProjectSection = () => {
 
 
   return (
-    <section className=" flex flex-col w-full lg:px-24 px-3 lg:max-w-5xl py-8 sm:py-10 lg:py-16 2xl:py-24" id="projects">
+    <section className=" flex flex-col w-full lg:px-24 px-8 lg:max-w-5xl py-8 sm:py-10 lg:py-16 2xl:py-24" id="projects">
       <div className=" ">
 
         {/* Header Section */}
@@ -79,7 +79,7 @@ const ProjectSection = () => {
 
               {/* Status Filter */}
 
-              <div className="flex lg:flex-row gap-3 flex-col w-full justify-end">
+              <div className="flex  gap-3  w-full justify-between lg:justify-end">
 
                 <Combobox
                   data={statuses}

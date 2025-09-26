@@ -23,14 +23,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     };
 
     return (
-        <div className="bg-white rounded-lg hover:shadow-sm border w-full transition-all duration-200 group ">
+        <div className="bg-white rounded-lg hover:shadow-sm border transition-all duration-200 group ">
             {/* Project Image */}
             {project.images[0] && (
                 <div className="  rounded-t-lg overflow-hidden">
                     <img
                         src={project.images[0]}
                         alt={project.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
+                        className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200"
 
                     />
                 </div>
@@ -57,60 +57,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
 
 
-                {/* Technologies */}
-                <div className="flex px-4 flex-wrap gap-1 mb-4">
-                    {project.technologies.slice(0, 3).map((tech) => (
-                        <span
-                            key={tech}
-                            className="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs"
-                        >
-                            {tech}
-                        </span>
-                    ))}
-                    {project.technologies.length > 3 && (
-                        <span className="px-2 py-1 text-gray-500 text-xs">
-                            +{project.technologies.length - 3} more
-                        </span>
-                    )}
-                </div>
-
-                {/* Actions */}
-                <div className=" items-center justify-between px-4">
-                    <Link
-                        to={`/project/${project.id}`}
-
-                        className="text-primary hover:text-primary font-medium text-sm transition-colors"
-                    >
-                        View Details →
-                    </Link>
-
-                    <div className="flex gap-2">
-                        {project.demoUrl && (
-                            <a
-                                href={project.demoUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="py-2 text-gray-500 hover:text-white transition-colors rounded-full hover:bg-primary/50"
-                                onClick={(e) => e.stopPropagation()}
-                                title="View Demo"
-                            >
-                                <ExternalLink size={16} />
-                            </a>
-                        )}
-                        {project.githubUrl && (
-                            <a
-                                href={project.githubUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="py-2 text-gray-500 hover:text-gray-900 transition-colors rounded-full hover:bg-gray-50"
-                                onClick={(e) => e.stopPropagation()}
-                                title="View Code"
-                            >
-                                <Github size={16} />
-                            </a>
-                        )}
-                    </div>
-                </div>
+               
             </div>
         </div>
 
