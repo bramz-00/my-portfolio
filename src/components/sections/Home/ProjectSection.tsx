@@ -41,14 +41,14 @@ const ProjectSection = () => {
 
 
   return (
-    <section className=" flex flex-col w-full lg:px-24 px-8 lg:max-w-5xl py-8 sm:py-10 lg:py-16 2xl:py-24" id="projects">
-      <div className=" ">
+    <section className=" flex flex-col w-full lg:px-24 px-4 lg:max-w-5xl py-8 sm:py-10 lg:py-16 2xl:py-24" id="projects">
+      <div className=" px-4">
 
         {/* Header Section */}
         <h2 className="text-4xl font-bold mb-2 text-left border-b pb-2">Selected Work</h2>
 
         {/* Projects Section */}
-      <div className="flex items-center justify-between mb-8 w-full">
+      <div className="flex items-center justify-between mb-8  w-full">
           <h2 className="text-3xl fler  font-bold text-gray-900 mb-4 md:mb-0">
           Projects
           <span className="ml-2 text-sm font-normal text-gray-500">

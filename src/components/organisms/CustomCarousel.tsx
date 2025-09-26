@@ -14,7 +14,7 @@ const CustomCarousel = <T,>({ data, renderItem, className,grid }: CustomCarousel
   return (
     <Carousel
      
-    className={className || "w-full py-0"}>
+    className={className || "w-48 h-48 "}>
       <CarouselPrevious />
       <CarouselNext />
       <CarouselContent>
