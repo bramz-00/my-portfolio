@@ -2,7 +2,7 @@
 import Layout from "@/components/templates/Layout"
 import AboutSection from "@/components/sections/Home/AboutSection"
 import Experiances from "@/components/sections/Home/ExperianceSection"
-// import ProjectSection from "@/components/sections/Home/ProjectSection"
+import ProjectSection from "@/components/sections/Home/ProjectSection"
 import SkillSection from "@/components/sections/Home/SkillSection"
 import Education from "@/components/sections/Home/EducationSection"
 import HeroSection from "@/components/sections/Home/HeroSection"
@@ -13,7 +13,7 @@ const Home = () => {
         <Layout isHomepage={true}>
             <HeroSection/>
             <AboutSection />
-            {/* <ProjectSection /> */}
+            <ProjectSection />
             {/* <BentoGridDemo /> */}
             <Experiances />
             <SkillSection />
