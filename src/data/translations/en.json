@@ -191,8 +191,31 @@
         "endDate": "2024-02-01",
         "category": "Personal",
         "featured": true
+      },
+      {
+        "id": 2,
+        "slug": "Kindora",
+        "title": "Kindora",
+        "description": "Plateforme de charité (don & échange d'objets & espace pour les organisations carritatives) réaliser avec (MongoDB & ExpressJS & React JS &  React Native  & NodeJS) en appliquant (SCRUM & MVC) .",
+        "longDescription": "This project is my personal portfolio where I present my work, skills, and experiences. It was built with React and Tailwind CSS for a clean, responsive UI and deployed for easy access.",
+        "status": "completed",
+        "technologies": [
+          "React",
+          "Tailwind CSS",
+          "JavaScript"
+        ],
+        "images": [
+          "https://res.cloudinary.com/digybqksh/image/upload/v1756558615/Portfolio/KIndora/hompage-kindora_wdqhyc.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1756557388/Portfolio/KIndora/login-page-kindora_blp2a5.png"
+        ],
+        "demoUrl": "https://res.cloudinary.com/digybqksh/video/upload/f_webm,vc_vp9,q_auto/v1730760548/Portfolio/GOODSWAP/co6jq54iehvf7afblywn",
+        "githubUrl": "",
+        "logoUrl": "https://res.cloudinary.com/digybqksh/image/upload/v1756557406/Portfolio/KIndora/logo-light_suaujy.svg",
+        "startDate": "2024-01-01",
+        "endDate": "2024-02-01",
+        "category": "Personal",
+        "featured": true
       }
-
 
     ]
   }
