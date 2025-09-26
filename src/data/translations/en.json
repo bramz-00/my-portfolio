@@ -215,31 +215,6 @@
         "endDate": "2024-02-01",
         "category": "Personal",
         "featured": true
-      },
-      {
-        "id": 3,
-        "slug": "Jood Academy",
-        "title": "Jood Academy",
-        "description": "Plateforme de charité (don & échange d'objets & espace pour les organisations carritatives) réaliser avec (MongoDB & ExpressJS & React JS &  React Native  & NodeJS) en appliquant (SCRUM & MVC) .",
-        "longDescription": "This project is my personal portfolio where I present my work, skills, and experiences. It was built with React and Tailwind CSS for a clean, responsive UI and deployed for easy access.",
-        "status": "completed",
-        "technologies": [
-          "React",
-          "Tailwind CSS",
-          "JavaScript"
-
-        ],
-        "images": [
-          "https://res.cloudinary.com/digybqksh/image/upload/v1756554065/Portfolio/JoodAcademy/login-page-jood_s4ngzd.png",
-          "https://res.cloudinary.com/digybqksh/image/upload/v1756554383/Portfolio/JoodAcademy/Dashboard-jood_zgrfwy.png"
-        ],
-        "demoUrl": "https://res.cloudinary.com/digybqksh/video/upload/f_webm,vc_vp9,q_auto/v1730760548/Portfolio/GOODSWAP/co6jq54iehvf7afblywn",
-        "githubUrl": "",
-        "logoUrl": "",
-        "startDate": "2025-04-12",
-        "endDate": "2024-02-01",
-        "category": "Personal",
-        "featured": true
       }
     ]
   }
