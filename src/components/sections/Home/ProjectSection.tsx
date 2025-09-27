@@ -79,7 +79,7 @@ const ProjectSection = () => {
 
               {/* Status Filter */}
 
-              <div className="flex lg:flex-row gap-3 flex-row w-full justify-between md:justify-end">
+              <div className="flex lg:flex-row lg:gap-3 flex-row w-full justify-between md:justify-end">
 
                 <Combobox
                   data={statuses}
