@@ -37,7 +37,7 @@ const TimelineItem = ({
         delay: index * 0.1,
         ease: [0.25, 0.46, 0.45, 0.94]
       }}
-      className="flex justify-start pt-4 w-full"
+      className="flex justify-start pt-4 mb-4 w-full"
     >
       <div className="sticky flex flex-col  z-40 items-start top-40 self-start lg:w-full">
         <motion.div
@@ -79,11 +79,11 @@ const TimelineItem = ({
         >
 
           {item.title}
-          <div className="lg:h-16 lg:w-48 w-36 h-10 flex items-center justify-start">
+          <div className="lg:h-20 lg:w-48 w-28 mt-3 h-10 flex items-center justify-start">
             <img
               src={item.logo}
               alt={item.title}
-              className=" object-contain rounded"
+              className=" object-contain rounded "
             />
 
           </div>

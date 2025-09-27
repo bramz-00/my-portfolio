@@ -15,6 +15,11 @@
     "education": "Éducation",
     "contact-me": "Contactez-moi"
   },
+   "btn": {
+    "send-message": "Envoyez-moi un message",
+    "resume": "CV"
+
+  },
   "experience": {
     "title": "Expérience",
     "entries": [

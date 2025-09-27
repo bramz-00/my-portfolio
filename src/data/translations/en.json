@@ -27,6 +27,11 @@
     "education": "Education",
     "contact-me": "Contacte me"
   },
+   "btn": {
+    "send-message": "Send me a message",
+    "resume": "Resume"
+
+  },
   "experience": {
     "title": "Experience",
     "entries": [
@@ -49,9 +54,25 @@
         ]
       },
       {
-        "title": "Mid Software Engineer / Backend Developer",
+    "title": "Fullstack Developer",
+    "company": "Self-employed",
+    "date": "January 2025 - Present",
+    "link": "https://anae.dz",
+    "logo": "anae",
+    "description": "Fullstack Developper working on refactoring and new features",
+    "responsibilities": [
+      "Refacto the old front for clients.",
+      "Developed new personal projects"
+    ],
+    "projects": [
+      "WhiteCoat",
+      "Jood Academy"
+    ]
+  },
+      {
+        "title": "Backend Developer",
         "company": "BdigitAll - Paper Zero",
-        "date": "Jan 2025 - May 2025",
+        "date": "January 2025 - May 2025",
         "link": "https://bdigitall.co/",
         "logo": "bdigitall",
         "description": "Backend Developer focusing on building reusable services with Laravel.",
@@ -67,7 +88,7 @@
       {
         "title": "Fullstack Developer",
         "company": "M2I Services",
-        "date": "Oct 2023 - Jan 2025",
+        "date": "October 2023 - January 2025",
         "link": "https://m2i-services.com/",
         "logo": "m2i",
         "description": "Fullstack developer focusing on projects from scratch using Vue.js and Laravel.",
@@ -196,7 +217,7 @@
         "id": 2,
         "slug": "Kindora",
         "title": "Kindora",
-        "description": "Plateforme de charité (don & échange d'objets & espace pour les organisations carritatives) réaliser avec (MongoDB & ExpressJS & React JS &  React Native  & NodeJS) en appliquant (SCRUM & MVC) .",
+        "description": "Non-profit app: Charity platform (donation & exchange of items & space for charitable organizations) built with MongoDB, ExpressJS, React JS, React Native, and NodeJS, applying SCRUM methodology and MVC architecture.",
         "longDescription": "This project is my personal portfolio where I present my work, skills, and experiences. It was built with React and Tailwind CSS for a clean, responsive UI and deployed for easy access.",
         "status": "completed",
         "technologies": [
@@ -400,23 +421,36 @@
         "id": 10,
         "slug": "Infreelancing",
         "title": "Infreelancing",
-        "description": "Plateforme de charité (don & échange d'objets & espace pour les organisations carritatives) réaliser avec (MongoDB & ExpressJS & React JS &  React Native  & NodeJS) en appliquant (SCRUM & MVC) .",
+        "description": "InFreelancing est la première plateforme généraliste française dédiée aux freelances. Véritable accélérateur de carrière, elle donne accès à l’ensemble des offres de missions freelance du marché, sans commissions ni intermédiaires. Notre objectif est d’accompagner les freelances et les entreprises et de favoriser leur croissance.Conçue en adéquation avec les nouvelles tendances de l’emploi, InFreelancing répond au besoin d’équilibrer l’offre et la demande sur le marché du travail indépendant, le tout en mode freemium.",
         "longDescription": "This project is my personal portfolio where I present my work, skills, and experiences. It was built with React and Tailwind CSS for a clean, responsive UI and deployed for easy access.",
-        "status": "completed",
+        "status": "in-progress",
         "technologies": [
           "React",
           "Tailwind CSS",
-          "Symfony"
+          "Symfony",
+          "mysql",
+          "AWS",
+          "Docker",
+          "Twig",
+          "Gitlab CI/CD"
         ],
         "images": [
-          "https://res.cloudinary.com/digybqksh/image/upload/v1688849053/Portfolio/GOODSWAP/ScreenShot_Tool_-20230622134252_f1ntzq.png"
+          "https://res.cloudinary.com/digybqksh/image/upload/v1758980935/Portfolio/INFREELANCING/Screenshot_from_2025-09-27_14-44-39_yxpeiy.png",
+                    "https://res.cloudinary.com/digybqksh/image/upload/v1758980911/Portfolio/INFREELANCING/Screenshot_from_2025-09-27_14-41-17_p63t3g.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1758980906/Portfolio/INFREELANCING/Screenshot_from_2025-09-27_14-42-49_c9gza6.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1758980927/Portfolio/INFREELANCING/Screenshot_from_2025-09-27_14-43-17_viuuq5.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1758980938/Portfolio/INFREELANCING/Screenshot_from_2025-09-27_14-44-05_fplmbw.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1758980918/Portfolio/INFREELANCING/Screenshot_from_2025-09-27_14-45-00_lzcsx5.png",
+          "https://res.cloudinary.com/digybqksh/image/upload/v1758980914/Portfolio/INFREELANCING/Screenshot_from_2025-09-27_14-45-21_svm4rx.png"
+         
+
         ],
         "demoUrl": "https://res.cloudinary.com/digybqksh/video/upload/f_webm,vc_vp9,q_auto/v1730760548/Portfolio/GOODSWAP/co6jq54iehvf7afblywn",
         "githubUrl": "",
-        "logoUrl": "",
-        "startDate": "2024-01-01",
-        "endDate": "2024-02-01",
-        "category": "Personal",
+        "logoUrl": "https://infreelancing.com/assets/images/logos/logo-9SnAAt2.svg",
+        "startDate": "2025-02-01",
+        "endDate": "Present",
+        "category": "Collaboartif",
         "featured": true
       }
     ]

@@ -1,5 +1,6 @@
 import React from "react";
 // import Autoplay from "embla-carousel-autoplay"
+import Autoplay from "embla-carousel-autoplay"
 
 type CustomCarouselProps<T> = {
   data: T[];
@@ -13,8 +14,12 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 const CustomCarousel = <T,>({ data, renderItem, className,grid }: CustomCarouselProps<T>) => {
   return (
     <Carousel
-     
-    className={className || "w-full py-0"}>
+       plugins={[
+        Autoplay({
+          delay: 2000,
+        }),
+      ]}
+    className={className || "  py-0"}>
       <CarouselPrevious />
       <CarouselNext />
       <CarouselContent>

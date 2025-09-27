@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import aladviseLogo from '@/assets/companies/aladvise.png';
 import m2iLogo from '@/assets/companies/m2i.png';
 import bdigitallLogo from '@/assets/companies/bdigitall.webp';
+import anae from '@/assets/companies/anae.jpeg';
 
 export default function ExperienceTimeline() {
   const { t } = useTranslation();
@@ -12,6 +13,7 @@ export default function ExperienceTimeline() {
     aladvise: aladviseLogo,
     m2i: m2iLogo,
     bdigitall: bdigitallLogo,
+    anae:anae,
   };
   const entries = t("experience.entries", { returnObjects: true }) as {
     title: string;

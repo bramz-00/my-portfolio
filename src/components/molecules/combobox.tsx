@@ -39,7 +39,7 @@ export function Combobox({ data, value, onChange, className }: ComboboxProps) {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className={cn("w-[200px] justify-between", className)}
+          className={cn("lg:w-[200px] w-48 justify-between", className)}
         >
           {formatLabel(displayValue)}
           <ChevronsUpDown className="opacity-50" />

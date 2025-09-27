@@ -4,7 +4,7 @@ import { Code, Database, Server, Zap, Users, Globe, Plus, type LucideIcon, AppWi
 import SkillCard from '@/components/organisms/SkillCard';
 import type { Skill } from '@/types/collection';
 
- 
+
 
 
 interface SkillData {
@@ -27,7 +27,9 @@ const skillsData: SkillsData = {
       { name: "English", url: "", level: 60, logo_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOMfflVjNnT2Bwz_iiO41zdliLvQCxNFqHLA&s" },
       { name: "French", url: "", level: 80, logo_url: "https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png" },
       { name: "Arabic", url: "", level: 100, logo_url: "https://upload.wikimedia.org/wikipedia/commons/2/23/Flag_of_Saudi_Arabia.png" },
-      
+      { name: "Kabyle", url: "", level: 100, logo_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Berber_flag.svg/1200px-Berber_flag.svg.png" },
+
+
 
     ]
   },
@@ -171,7 +173,7 @@ const SkillSection: React.FC = () => {
         >
           Skills
         </motion.h2>
-        <p  className="lg:block hidden text-gray-700 py-2 mb-3">
+        <p className="lg:block hidden text-gray-700 py-2 mb-3">
           <b>Note:</b> Hover over each item to see the skill level.
         </p>        {/* Filter Pills */}
         <motion.div

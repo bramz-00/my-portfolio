@@ -111,8 +111,8 @@ const HeroSection = () => {
                                     duration: 1,
                                     delay: 0.1,
                                     ease: [0.25, 0.46, 0.45, 0.94]
-                                }} className="flex gap-4 items-center lg:justify-start w-full justify-center">
-                                <Link to={'https://drive.google.com/file/d/1tmV8hO5RXmPSty4ZufMEdGMt9a9iAifc/view'} target="_blank" className="py-1.5 px-4 hover:bg-primary/70 cursor-pointer text-white bg-primary rounded-3xl">Resume</Link>
+                                }} className="flex gap-4 items-center lg:justify-start w-full">
+                                <Link to={'https://drive.google.com/file/d/1tmV8hO5RXmPSty4ZufMEdGMt9a9iAifc/view'} target="_blank" className="py-1.5 px-4 hover:bg-primary/70 cursor-pointer text-white bg-primary rounded-3xl">  {t("btn.resume")}</Link>
                                 <ContactModal />
 
                             </motion.div>

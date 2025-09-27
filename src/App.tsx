@@ -6,6 +6,7 @@ import Home from "@/pages/Home";
 import ProjectDetail from "./pages/ProjectDetail";
 import BackToTopButton from "./components/molecules/BackToTopButton";
 import ProjectsPage from "./pages/Project";
+import ScrollToTop from "./components/molecules/ScrollToTop";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         toastOptions={{
           duration: 700,
         }} />
+      <ScrollToTop />
       <BackToTopButton />
       <Routes>
         <Route path="/" element={<Home />} />

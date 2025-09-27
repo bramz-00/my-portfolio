@@ -80,8 +80,8 @@ export default function Header({ isHomepage }: HeaderProps)  {
 
                             <div className="flex  items-center text-center justify-center lg:gap-x-6  ">
                                 
-                                        <a  href={"/projects"} className="hover:text-primary hidden lg:block 2xl:text-sm lg:text-xs text-xs gap-2 w-24 text-center  font-semibold text-gray-900">
-                                            Projets
+                                        <a  href={"/projects"} className="text-primary hidden lg:block 2xl:text-sm lg:text-xs text-xs gap-2 w-24 text-center  font-semibold hover:text-gray-900">
+                                            {t("nav.projects")}
                                         </a>
                                  
                             <div className="flex items-center justify-between gap-3">

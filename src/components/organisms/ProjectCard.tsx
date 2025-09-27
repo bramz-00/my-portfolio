@@ -30,7 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     <img
                         src={project.images[0]}
                         alt={project.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
+                        className=" lg:h-64 h-56 w-full object-cover group-hover:scale-105 transition-transform duration-200"
 
                     />
                 </div>
@@ -90,7 +90,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                                 href={project.demoUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="py-2 text-gray-500 hover:text-white transition-colors rounded-full hover:bg-primary/50"
+                                className=" text-gray-500 hover:text-primary transition-colors rounded-full "
                                 onClick={(e) => e.stopPropagation()}
                                 title="View Demo"
                             >
@@ -102,7 +102,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                                 href={project.githubUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="py-2 text-gray-500 hover:text-gray-900 transition-colors rounded-full hover:bg-gray-50"
+                                className=" text-gray-500 hover:text-primary transition-colors rounded-full "
                                 onClick={(e) => e.stopPropagation()}
                                 title="View Code"
                             >

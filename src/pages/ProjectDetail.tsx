@@ -3,7 +3,6 @@ import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Github, Calendar, Tag } from 'lucide-react';
 import type { Project } from '@/types/collection';
 import Layout from '@/components/templates/Layout';
-import { Button } from '@/components/atoms/button';
 import CustomCarousel from '@/components/organisms/CustomCarousel';
 import { useTranslation } from 'react-i18next';
 
@@ -48,25 +47,25 @@ const ProjectDetail: React.FC = () => {
     <Layout>
       <div className="max-w-4xl mx-auto px-4 py-12">
         {/* Back Navigation */}
-        <div className='flex items-center w-full gap-2 justify-end'>
-          <Button
+        <div className='flex items-center w-full gap-2 justify-start'>
+          <span
             onClick={handleBack}
-            className=" inline-flex cursor-pointer gap-2 items-center bg-white text-primary border px-4 rounded-full py-1 border-primary  hover:text-secondary hover:bg-secondary/10 mb-8 transition-colors"
+            className=" inline-flex cursor-pointer gap-2 items-center  text-primary  px-4 rounded-full    hover:text-secondary hover:bg-secondary/10 mb-8 transition-colors"
           >
             <ArrowLeft size={20} />
             Back
-          </Button>
+          </span>
         </div>
 
         {/* Project Header */}
         <div className="bg-white rounded-2xl  border p-8 mb-8">
-          <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
-            <div>
+          <div className="flex flex-col md:flex-row md:items-start  md:justify-between gap-4 mb-6">
+            <div className='flex flex-col lg:items-start'>
               <img src={project.logoUrl} alt="" className='h-24 mb-4' />
-              <h1 className="text-3xl font-light uppercase text-primary mb-2">
+              <h1 className="text-3xl text-left font-light uppercase text-primary mb-2">
                 {project.title}
               </h1>
-              <p className="text-lg text-gray-600 mb-4">
+              <p className="text-lg text-left text-gray-600 mb-4">
                 {project.description}
               </p>
               <div className="flex items-center gap-4 text-sm text-gray-500">
@@ -134,7 +133,7 @@ const ProjectDetail: React.FC = () => {
                 Screenshots
               </h2>
 
-              <CustomCarousel
+              <CustomCarousel className='lg:w-full w-[340px] '
                 data={project.images}
                 renderItem={(image, index) =>
                   <div className=''>

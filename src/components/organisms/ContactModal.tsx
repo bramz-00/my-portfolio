@@ -14,10 +14,14 @@ import { Input } from "@/components/atoms/input"
 import { Textarea } from "@/components/atoms/textarea"
 import { Button } from "@/components/atoms/button"
 import { toast } from 'sonner';
+import { useTranslation } from "react-i18next"
+
 
 const ContactModal = () => {
     const [loading, setLoading] = useState(false)
     const [open, setOpen] = useState(false) 
+        const { t } = useTranslation();
+    
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         setLoading(true)
@@ -54,7 +58,7 @@ const ContactModal = () => {
     return (
         <Dialog open={open} onOpenChange={setOpen}>
             <DialogTrigger asChild>
-                <Button className="py-1.5 px-4 hover:bg-primary/10 cursor-pointer capitalize bg-white border border-primary text-primary rounded-3xl">Send me a message</Button>
+                <Button className="py-1.5 px-4 hover:bg-primary/10 cursor-pointer capitalize bg-white border border-primary text-primary rounded-3xl">{t("btn.send-message")}</Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-xl max-h-[90dvh] overflow-y-auto rounded-3xl p-8">
                 <DialogHeader>
