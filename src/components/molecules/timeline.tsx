@@ -50,7 +50,7 @@ const TimelineItem = ({
             stiffness: 200,
             damping: 15
           }}
-          className="h-10 absolute -left-2 top-2.5 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center"
+          className="h-10 absolute -left-2 top-4 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center"
         >
           <motion.div
             initial={{ scale: 0 }}
@@ -75,11 +75,11 @@ const TimelineItem = ({
             delay: index * 0.1 + 0.3,
             ease: [0.25, 0.46, 0.45, 0.94]
           }}
-          className=" text-xl flex lg:flex-row gap-4 lg:items-center items-start flex-col-reverse w-full justify-between pl-10 md:pl-20 md:text-xl font-bold text-neutral-500 dark:text-neutral-500"
+          className=" text-xl flex lg:flex-row gap-4 lg:items-center items-start flex-col-reverse w-full justify-between pl-10 md:pl-16 md:text-xl font-bold text-neutral-500 dark:text-neutral-500"
         >
 
           {item.title}
-          <div className="lg:h-20 lg:w-48 w-28 mt-3 h-10 flex items-center justify-start">
+          <div className="lg:h-16 lg:w-48 w-28 mt-3 h-10 flex items-center justify-start">
             <img
               src={item.logo}
               alt={item.title}
