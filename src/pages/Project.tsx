@@ -100,7 +100,7 @@ const ProjectsPage: React.FC = () => {
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-8">
-                    {project.technologies.map((tech, index) => (
+                    {project.technologies.slice(0,3).map((tech, index) => (
                         <span
                             key={tech}
                             className="px-3 py-1 bg-gray-50 text-gray-700 rounded-full text-sm font-medium border border-gray-200 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 transition-all duration-300"
@@ -116,7 +116,7 @@ const ProjectsPage: React.FC = () => {
                     <Link
                         to={`/project/${project.id}`}
 
-                        className="flex-1 px-6 py-3 bg-primary text-white font-semibold rounded-2xl hover:bg-primary transition-all duration-300 hover:scale-[1.02]"
+                        className="flex-1 px-6 py-3 underline text-primary font-semibold rounded-2xl  transition-all duration-300 hover:scale-[1.02]"
                     >
                         View Details
                     </Link>
@@ -126,7 +126,7 @@ const ProjectsPage: React.FC = () => {
                                 href={project.demoUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-12 h-12 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-110"
+                                className="w-12 h-12 bg-primary/10 text-primary rounded-2xl flex items-center justify-center hover:bg-primary/50 hover:text-white transition-all duration-300 hover:scale-110"
                             >
                                 <Globe size={18} />
                             </a>
@@ -481,14 +481,14 @@ const ProjectsPage: React.FC = () => {
                             <div className="flex bg-gray-100 rounded-lg p-1">
                                 <button
                                     onClick={() => setViewMode('grid')}
-                                    className={`p-2 rounded-md transition-colors ${viewMode === 'grid' ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-600 hover:text-gray-900'
+                                    className={`p-2 rounded-md transition-colors ${viewMode === 'grid' ? 'bg-white text-primary shadow-sm' : 'text-gray-600 hover:text-gray-900'
                                         }`}
                                 >
                                     <Grid size={16} />
                                 </button>
                                 <button
                                     onClick={() => setViewMode('list')}
-                                    className={`p-2 rounded-md transition-colors ${viewMode === 'list' ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-600 hover:text-gray-900'
+                                    className={`p-2 rounded-md transition-colors ${viewMode === 'list' ? 'bg-white text-primary shadow-sm' : 'text-gray-600 hover:text-gray-900'
                                         }`}
                                 >
                                     <List size={16} />
@@ -499,7 +499,7 @@ const ProjectsPage: React.FC = () => {
 
                     {/* Filters */}
                     {showFilters && (
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-gray-200">
+                        <div className="grid grid-cols-1 mb-4 md:grid-cols-3 gap-4 pt-4 border-t border-gray-200">
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Category</label>
                                 <select
@@ -561,7 +561,7 @@ const ProjectsPage: React.FC = () => {
                                     setSelectedStatus('all');
                                     setSelectedTech('all');
                                 }}
-                                className="mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-colors"
+                                className="mt-6 px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-blue-700 transition-colors"
                             >
                                 Clear All Filters
                             </button>

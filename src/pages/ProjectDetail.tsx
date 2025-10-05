@@ -154,7 +154,7 @@ const ProjectDetail: React.FC = () => {
         </div>
 
         {/* Project Details */}
-        <div className="bg-white rounded-2xl  border p-8">
+      { project.longDescription && <div className="bg-white rounded-2xl  border p-8">
           <h2 className="text-xl font-semibold text-gray-900 mb-4">
             About This Project
           </h2>
@@ -163,7 +163,7 @@ const ProjectDetail: React.FC = () => {
               {project.longDescription}
             </p>
           </div>
-        </div>
+        </div>}
       </div>
     </Layout>
   );
