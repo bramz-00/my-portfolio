@@ -17,7 +17,8 @@
   },
    "btn": {
     "send-message": "Envoyez-moi un message",
-    "resume": "CV"
+    "resume": "CV",
+    "resume_url": "https://drive.google.com/file/d/16o9CIKhd6Zxi96dIlcSKQJ3I8HMvQhZJ/view?usp=sharing"
 
   },
   "experience": {

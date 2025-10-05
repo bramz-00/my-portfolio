@@ -2,6 +2,7 @@
   "hero": {
     "title": "Hi I'am",
     "subtitle": "Passionate Full-stack Developer & Tech Enthusiast."
+
   },
   "about": {
     "title": "About Me",
@@ -29,7 +30,9 @@
   },
    "btn": {
     "send-message": "Send me a message",
-    "resume": "Resume"
+    "resume": "Resume",
+    "resume_url": "https://drive.google.com/file/d/1QYq4bwI1LM9uoaLs8D7qr0-99vnX_yq2/view?usp=sharing"
+
 
   },
   "experience": {
